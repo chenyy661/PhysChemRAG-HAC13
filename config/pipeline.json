@@ -1,0 +1,168 @@
+{
+  "01_dare": [
+    {
+      "script": "engine/dare.py",
+      "args": [
+        "--real-dir", "data/real/align",
+        "--exclude-dir", "data/exclusions/calibration", "data/exclusions/final_holdout", "data/exclusions/test", "data/exclusions/targeted_pool", "data/exclusions/targeted_selected", "data/exclusions/hydrocarbon", "data/exclusions/nist760",
+        "--synthetic-root", "data/simulated",
+        "--synthetic-index", "data/simulated/index.jsonl",
+        "--initial-dare", "artifacts/weights/dare_base.pth",
+        "--initial-projection", "artifacts/weights/projection_base.pth",
+        "--graph-weights", "artifacts/weights/graph_base.pth",
+        "--synthetic-count", "20000",
+        "--real-batch-size", "64",
+        "--synthetic-batch-size", "128",
+        "--block-size", "50000",
+        "--preload-synthetic",
+        "--preload-max-samples", "20000",
+        "--epochs", "20",
+        "--log-interval", "20",
+        "--encoder-output", "artifacts/weights/dare_hac13.pth",
+        "--projection-output", "artifacts/weights/projection_hac13.pth",
+        "--report", "artifacts/reports/dare.json"
+      ]
+    }
+  ],
+  "02_contrastive": [
+    {
+      "script": "engine/contrastive.py",
+      "args": [
+        "--data-root", "data/simulated",
+        "--structure-index", "data/simulated/index.jsonl",
+        "--exclude-dir", "data/exclusions/calibration", "data/exclusions/final_holdout", "data/exclusions/test", "data/exclusions/targeted_pool", "data/exclusions/targeted_selected", "data/exclusions/hydrocarbon", "data/exclusions/nist760",
+        "--dare-weights", "artifacts/weights/dare_hac13.pth",
+        "--no-graph-init",
+        "--spectrum-init-weights", "artifacts/weights/projection_hac13.pth",
+        "--batch-sampler", "formula_balanced",
+        "--split-group-level", "formula",
+        "--epochs", "30",
+        "--batch-size", "256",
+        "--block-size", "50000",
+        "--chunk-cache-size", "2",
+        "--preload-all-chunks",
+        "--num-workers", "0",
+        "--max-train-samples", "0",
+        "--max-val-samples", "0",
+        "--log-interval", "50",
+        "--output-weights", "artifacts/weights/contrastive.pth",
+        "--report", "artifacts/reports/contrastive.json"
+      ]
+    }
+  ],
+  "03_sim_adapter": [
+    {
+      "script": "engine/sim_adapter.py",
+      "args": [
+        "--data-root", "data/simulated",
+        "--structure-index", "data/simulated/index.jsonl",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--embedding-cache", "artifacts/cache/sim_embeddings.pt",
+        "--epochs", "20",
+        "--batch-size", "128",
+        "--embedding-batch-size", "256",
+        "--candidates-per-query", "64",
+        "--hard-negative-k", "16",
+        "--base-hard-negative-k", "32",
+        "--negative-sampling", "base_topk_mixed",
+        "--seed", "20260912",
+        "--split-seed", "20260913",
+        "--max-index-records", "0",
+        "--max-formulas", "0",
+        "--max-train-samples", "0",
+        "--max-val-samples", "0",
+        "--output-weights", "artifacts/weights/sim_adapter.pth",
+        "--report", "artifacts/reports/sim_adapter.json"
+      ]
+    }
+  ],
+  "04_real_adapter": [
+    {
+      "script": "engine/build_embeddings.py",
+      "skip_if_exists": "artifacts/cache/graph_embeddings.pt",
+      "args": [
+        "--wide-pool-cache", "artifacts/pools/wide_pool.json",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--output", "artifacts/cache/graph_embeddings.pt",
+        "--batch-size", "1024"
+      ]
+    },
+    {
+      "script": "engine/real_adapter.py",
+      "args": [
+        "--wide-pool-cache", "artifacts/pools/wide_pool.json",
+        "--query-dir", "data/real/anchors",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--graph-embedding-cache", "artifacts/cache/graph_embeddings.pt",
+        "--initial-adapter-weights", "artifacts/weights/sim_adapter.pth",
+        "--epochs", "12",
+        "--hard-negative-k", "64",
+        "--val-fraction", "0.20",
+        "--seed", "20260909",
+        "--split-seed", "20260910",
+        "--output-weights", "artifacts/weights/real_adapter.pth",
+        "--report", "artifacts/reports/real_adapter.json"
+      ]
+    }
+  ],
+  "05_listwise": [
+    {
+      "script": "engine/listwise.py",
+      "args": [
+        "--wide-pool-cache", "artifacts/pools/wide_pool.json",
+        "--query-dir", "data/real/anchors",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--formula-adapter-weights", "artifacts/weights/real_adapter.pth",
+        "--graph-embedding-cache", "artifacts/cache/graph_embeddings.pt",
+        "--candidate-limit", "1000",
+        "--union-width", "1000",
+        "--shortlist-policy", "formula_adapter",
+        "--ranker-architecture", "candidate_independent",
+        "--candidate-feature-policy", "raw_cosine",
+        "--split-seed", "20260910",
+        "--seed", "20260911",
+        "--epochs", "12",
+        "--hard-negative-k", "64",
+        "--no-target-protect-training",
+        "--output-weights", "artifacts/weights/listwise.pth",
+        "--report", "artifacts/reports/listwise.json"
+      ]
+    }
+  ],
+  "06_evaluate": [
+    {
+      "name": "Adapter 主结果",
+      "script": "engine/evaluate.py",
+      "args": [
+        "--dataset-manifest", "artifacts/candidates/independent550_manifest.json",
+        "--candidate-field", "formula_only_results",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--formula-adapter-weights", "artifacts/weights/real_adapter.pth",
+        "--max-candidates", "10000",
+        "--coarse-topk", "5000",
+        "--output-topk", "24",
+        "--final-score", "coarse",
+        "--log-interval", "25",
+        "--output", "artifacts/reports/evaluate_adapter.json"
+      ]
+    },
+    {
+      "name": "Listwise 消融",
+      "script": "engine/evaluate.py",
+      "args": [
+        "--dataset-manifest", "artifacts/candidates/independent550_manifest.json",
+        "--candidate-field", "formula_only_results",
+        "--contrastive-weights", "artifacts/weights/contrastive.pth",
+        "--formula-adapter-weights", "artifacts/weights/real_adapter.pth",
+        "--ranker-weights", "artifacts/weights/listwise.pth",
+        "--max-candidates", "10000",
+        "--full-pool-ranker",
+        "--output-topk", "24",
+        "--final-score", "ranker",
+        "--log-interval", "25",
+        "--output", "artifacts/reports/evaluate_listwise.json"
+      ]
+    }
+  ]
+}
+

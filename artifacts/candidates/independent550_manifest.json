@@ -1,0 +1,4456 @@
+{
+  "schema_version": 1,
+  "method": "combined_strict_independent_external_dataset_manifest",
+  "dataset_name": "independent550",
+  "usage_policy": "frozen_external_evaluation_only_not_for_training_or_model_selection",
+  "chemical_domain": {
+    "name": "domain_hac13",
+    "version": 1,
+    "allowed_elements": [
+      "C",
+      "H",
+      "N",
+      "O",
+      "S",
+      "P",
+      "F",
+      "Cl",
+      "Br",
+      "I"
+    ],
+    "formula_elements": [
+      "C",
+      "H",
+      "N",
+      "O",
+      "S",
+      "P",
+      "F",
+      "Cl",
+      "Br",
+      "I"
+    ],
+    "min_heavy_atoms": 1,
+    "max_heavy_atoms": 13
+  },
+  "query_count": 550,
+  "query_dir": "../../data/evaluation/independent550",
+  "candidate_cache": "independent550.json",
+  "default_evaluation_output": "../reports/evaluate_adapter.json",
+  "source_audit_report": "../reports/external_independence.json",
+  "source_datasets": [
+    {
+      "name": "targeted649",
+      "query_count": 44
+    },
+    {
+      "name": "nist760",
+      "query_count": 506
+    }
+  ],
+  "materialization": {
+    "copy": 550
+  },
+  "rows": [
+    {
+      "cas": "100-02-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-02-7.pt",
+      "formula": "C6H5NO3",
+      "canonical": "O=[N+]([O-])c1ccc(O)cc1",
+      "spectrum_hash": "fd2b7717958095a50a2b41b54774a1aaed17437736843b0bb7cdcf605f4435bc"
+    },
+    {
+      "cas": "100-25-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-25-4.pt",
+      "formula": "C6H4N2O4",
+      "canonical": "O=[N+]([O-])c1ccc([N+](=O)[O-])cc1",
+      "spectrum_hash": "0cfb4e5507c6bee8f1afa61674e1ec21e92a449594dac42e2c12b1ae7b4799fe"
+    },
+    {
+      "cas": "100-42-5",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/100-42-5.pt",
+      "formula": "C8H8",
+      "canonical": "C=Cc1ccccc1",
+      "spectrum_hash": "bd2c9d3e90a320c9d2e8ab5c33dd9cc23820459d21f109f4faaad17e1401582a"
+    },
+    {
+      "cas": "100-46-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-46-9.pt",
+      "formula": "C7H9N",
+      "canonical": "NCc1ccccc1",
+      "spectrum_hash": "d59e9c7ad7e44e97ef3c1ab7e97f9a1e145e42b2c6461174cfc99f499ba593d8"
+    },
+    {
+      "cas": "100-47-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-47-0.pt",
+      "formula": "C7H5N",
+      "canonical": "N#Cc1ccccc1",
+      "spectrum_hash": "139aee72cf608c3c36cc3bdcb12ed1958f13b6eb0a5af7340af95b3672351ead"
+    },
+    {
+      "cas": "100-48-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-48-1.pt",
+      "formula": "C6H4N2",
+      "canonical": "N#Cc1ccncc1",
+      "spectrum_hash": "99a72a3697ad71d88fd78d1d15d6c03478889b6e54cd88d6b9df0838046476b9"
+    },
+    {
+      "cas": "100-71-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-71-0.pt",
+      "formula": "C7H9N",
+      "canonical": "CCc1ccccn1",
+      "spectrum_hash": "62f2a69a497ea4617680bec90d751ff072ff7c0a4dc3376528b90aa94310a84e"
+    },
+    {
+      "cas": "100-92-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-92-5.pt",
+      "formula": "C11H17N",
+      "canonical": "CNC(C)(C)Cc1ccccc1",
+      "spectrum_hash": "b7697a2c311a06ce69cdf0bf34ba09373e5e0e0c650555b45f540c4e6cb081e4"
+    },
+    {
+      "cas": "100-97-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/100-97-0.pt",
+      "formula": "C6H12N4",
+      "canonical": "C1N2CN3CN1CN(C2)C3",
+      "spectrum_hash": "ef5acff1661159e6376f94470b244c603d160faed0c7981632185d750a4e87e0"
+    },
+    {
+      "cas": "1003-31-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/1003-31-2.pt",
+      "formula": "C5H3NS",
+      "canonical": "N#Cc1cccs1",
+      "spectrum_hash": "0b1a50e460c387717bb4346e1e165bc3ef8c4baeb8e6baa15f2ff45caea9afc9"
+    },
+    {
+      "cas": "1003-38-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1003-38-9.pt",
+      "formula": "C6H12O",
+      "canonical": "CC1CCC(C)O1",
+      "spectrum_hash": "b868c4fd667fe25b12083d9bbb18782c63e7278515e8324faa7b190b461fe575"
+    },
+    {
+      "cas": "1003-64-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1003-64-1.pt",
+      "formula": "C8H14",
+      "canonical": "CC=C1CCCCC1",
+      "spectrum_hash": "270708cca542258c591d29e6861d68093150a206b5b46a451ed32941f8cca6bb"
+    },
+    {
+      "cas": "1008-88-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1008-88-4.pt",
+      "formula": "C11H9N",
+      "canonical": "c1ccc(-c2cccnc2)cc1",
+      "spectrum_hash": "61641e161f1e281ac88fff84abad2d3055a9fc4351b306e98aef67fa8a402b94"
+    },
+    {
+      "cas": "101-81-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/101-81-5.pt",
+      "formula": "C13H12",
+      "canonical": "c1ccc(Cc2ccccc2)cc1",
+      "spectrum_hash": "43ca094da77985c5100c3df9333a7f3bb29d3e26ae1c5ae921ef396fc8e5b559"
+    },
+    {
+      "cas": "101-99-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/101-99-5.pt",
+      "formula": "C9H11NO2",
+      "canonical": "CCOC(=O)Nc1ccccc1",
+      "spectrum_hash": "e82696d19065bde8e8aaefe916b228707e9f11ba47ac658da9f5cf0ce220f9a3"
+    },
+    {
+      "cas": "10108-56-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/10108-56-2.pt",
+      "formula": "C10H21N",
+      "canonical": "CCCCNC1CCCCC1",
+      "spectrum_hash": "1360e9540d2b9ea461002596d6560747cc3a6c9afe160c62b140cfe90e408855"
+    },
+    {
+      "cas": "103-45-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/103-45-7.pt",
+      "formula": "C10H12O2",
+      "canonical": "CC(=O)OCCc1ccccc1",
+      "spectrum_hash": "f201a871a0ab727b3318f457de1cec49ee479d47eff1922c5f10deb866947f5c"
+    },
+    {
+      "cas": "104-53-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/104-53-0.pt",
+      "formula": "C9H10O",
+      "canonical": "O=CCCc1ccccc1",
+      "spectrum_hash": "8bb39bec80e8de88ef4c07ea9ef706c503f7addd104b8305f167ce8bec28aacf"
+    },
+    {
+      "cas": "105-44-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/105-44-2.pt",
+      "formula": "C6H13NO",
+      "canonical": "CC(CC(C)C)=NO",
+      "spectrum_hash": "da1fd608a0f87a071c3d1178ec620dabc1ab35bae7bb3ee41f6e5788c69c2e5c"
+    },
+    {
+      "cas": "105-86-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/105-86-2.pt",
+      "formula": "C11H18O2",
+      "canonical": "CC(C)=CCCC(C)=CCOC=O",
+      "spectrum_hash": "555f74ae3b7eb46084b3c40ab37d19fde8397575f20a04e2513acfa82e8e225b"
+    },
+    {
+      "cas": "10574-36-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/10574-36-4.pt",
+      "formula": "C7H14",
+      "canonical": "CC=C(C)CCC",
+      "spectrum_hash": "8e62b4f8ffd5336585769331ad653ff280c0ac0e9cf3ffddaf206aff3545228c"
+    },
+    {
+      "cas": "10574-37-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/10574-37-5.pt",
+      "formula": "C7H14",
+      "canonical": "CCC(C)=C(C)C",
+      "spectrum_hash": "e2310ee9da44e38c4a7cfb7f2c4ddf4bdfe4144c78f43e7863f6a2f1eebf9028"
+    },
+    {
+      "cas": "106-37-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-37-6.pt",
+      "formula": "C6H4Br2",
+      "canonical": "Brc1ccc(Br)cc1",
+      "spectrum_hash": "cef12092b51081f482e07d7b27cf7b714debf1b0b6a1617e6e23002ae82cde27"
+    },
+    {
+      "cas": "106-50-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-50-3.pt",
+      "formula": "C6H8N2",
+      "canonical": "Nc1ccc(N)cc1",
+      "spectrum_hash": "c8e7ca67c59df77a3dd4c5df6e67a0015c7951057eb1a8e5d5b223fc3a26b75b"
+    },
+    {
+      "cas": "106-51-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-51-4.pt",
+      "formula": "C6H4O2",
+      "canonical": "O=C1C=CC(=O)C=C1",
+      "spectrum_hash": "092d8764d3d923cae6255cec6a712303497dc1c766f25fce8713602ff3122976"
+    },
+    {
+      "cas": "106-65-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-65-0.pt",
+      "formula": "C6H10O4",
+      "canonical": "COC(=O)CCC(=O)OC",
+      "spectrum_hash": "21a7cbac4d2b833128904d846d95c60fd97587df05492a0c5e7e8c42afaeff12"
+    },
+    {
+      "cas": "106-70-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-70-7.pt",
+      "formula": "C7H14O2",
+      "canonical": "CCCCCC(=O)OC",
+      "spectrum_hash": "bc00f2ee3a41a420415a974d71c62cb213c7ba1db32dfd816db608895937b1f7"
+    },
+    {
+      "cas": "106-85-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/106-85-4.pt",
+      "formula": "C10H16O3",
+      "canonical": "CC(=O)OCC1CC2OC2CC1C",
+      "spectrum_hash": "86724fdc46113512040a767e6d3d051b6a979153941335baa5f77312bbeb2787"
+    },
+    {
+      "cas": "1067-08-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1067-08-9.pt",
+      "formula": "C8H18",
+      "canonical": "CCC(C)(CC)CC",
+      "spectrum_hash": "1aa79488c754e57bfd1188f1a64c92f60972b462318617e825538e68880264aa"
+    },
+    {
+      "cas": "1067-20-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1067-20-5.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(CC)(CC)CC",
+      "spectrum_hash": "99622c586cefd7e5bc9c5d5855fcd699634884c665edbb055ffa88fc878426a6"
+    },
+    {
+      "cas": "1068-19-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1068-19-5.pt",
+      "formula": "C9H20",
+      "canonical": "CCCC(C)(C)CCC",
+      "spectrum_hash": "9024f825bbb5a9a1b743b2a34238a19394a3d4ab4409770aa09a0969f0ad03e5"
+    },
+    {
+      "cas": "1069-53-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1069-53-0.pt",
+      "formula": "C9H20",
+      "canonical": "CC(C)CC(C)C(C)C",
+      "spectrum_hash": "b5978e5d1a622667652e94729c4b8c4d59c97fd8abb01c2ae6862f96ba276000"
+    },
+    {
+      "cas": "107-00-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-00-6.pt",
+      "formula": "C4H6",
+      "canonical": "C#CCC",
+      "spectrum_hash": "d542909c1dd39a1ef64729c12b5ab12a2d35d6267801a7dc2743054f8291c862"
+    },
+    {
+      "cas": "107-03-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-03-9.pt",
+      "formula": "C3H8S",
+      "canonical": "CCCS",
+      "spectrum_hash": "d42cfafed835d620a26277323358f7938090729e794340e24501df0d37ea7769"
+    },
+    {
+      "cas": "107-04-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-04-0.pt",
+      "formula": "C2H4BrCl",
+      "canonical": "ClCCBr",
+      "spectrum_hash": "86ac91a1d40b0e0001f602fec4d0ab58c13a861106a2fb902a3b5e6c10992015"
+    },
+    {
+      "cas": "107-45-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-45-9.pt",
+      "formula": "C8H19N",
+      "canonical": "CC(C)(C)CC(C)(C)N",
+      "spectrum_hash": "783bb85887269c1fa2df92e7460be5c6a61575b24e09e4ac0b17d08727f5dc71"
+    },
+    {
+      "cas": "107-80-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-80-2.pt",
+      "formula": "C4H8Br2",
+      "canonical": "CC(Br)CCBr",
+      "spectrum_hash": "3cdf90650f9e55cfcc2b44fbb523544a487ac90583a1067241c4461b6b898b9e"
+    },
+    {
+      "cas": "107-83-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-83-5.pt",
+      "formula": "C6H14",
+      "canonical": "CCCC(C)C",
+      "spectrum_hash": "69af322eacfe47baf393687fed08de28ec1ba432076844b8cb7008f2b8a7c253"
+    },
+    {
+      "cas": "107-96-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/107-96-0.pt",
+      "formula": "C3H6O2S",
+      "canonical": "O=C(O)CCS",
+      "spectrum_hash": "80c0d341fc9dff040407f44e1d9fa1bb7635d42360c223655a7993bb538afc45"
+    },
+    {
+      "cas": "1070-71-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1070-71-9.pt",
+      "formula": "C3HN",
+      "canonical": "C#CC#N",
+      "spectrum_hash": "2b84a7733dcd2ee921d4a83099bb75e1cdc3eae2a60ec2b4b4d1007375d8d953"
+    },
+    {
+      "cas": "1070-87-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1070-87-7.pt",
+      "formula": "C9H20",
+      "canonical": "CC(C)(C)CC(C)(C)C",
+      "spectrum_hash": "46868182240fbef1d78e330bd9e5ce306a7323304b5658176f30907e9ad6066c"
+    },
+    {
+      "cas": "1071-81-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1071-81-4.pt",
+      "formula": "C10H22",
+      "canonical": "CC(C)(C)CCC(C)(C)C",
+      "spectrum_hash": "c38257c87c4712340213c669c6ff7d9642155a7e31391de248c72ba0ef4709dc"
+    },
+    {
+      "cas": "1072-05-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1072-05-5.pt",
+      "formula": "C9H20",
+      "canonical": "CC(C)CCCC(C)C",
+      "spectrum_hash": "812438e0ec9c21685258fe5e5e401665ab336cc0f09f27c5d034c0b07d613171"
+    },
+    {
+      "cas": "1072-16-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1072-16-8.pt",
+      "formula": "C10H22",
+      "canonical": "CC(C)CCCCC(C)C",
+      "spectrum_hash": "31343ac0774be8d727567a646a8470719a318f0dc84388f8627d80e33b720d21"
+    },
+    {
+      "cas": "1073-06-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1073-06-9.pt",
+      "formula": "C6H4BrF",
+      "canonical": "Fc1cccc(Br)c1",
+      "spectrum_hash": "89c179484e9a84b34c5ea4e566efd0c18db3b1664b0b9f5e087e36c7f3d9fca9"
+    },
+    {
+      "cas": "1074-43-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1074-43-7.pt",
+      "formula": "C10H14",
+      "canonical": "CCCc1cccc(C)c1",
+      "spectrum_hash": "26c743b63a8bc1d9bf85386617faa31ef4c1c653906e8e06441affba361cead2"
+    },
+    {
+      "cas": "1074-55-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1074-55-1.pt",
+      "formula": "C10H14",
+      "canonical": "CCCc1ccc(C)cc1",
+      "spectrum_hash": "fe573015bfe4424919b327aac112b6d252b708dbd5ea5b172bce76adbd383536"
+    },
+    {
+      "cas": "1075-38-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1075-38-3.pt",
+      "formula": "C11H16",
+      "canonical": "Cc1cccc(C(C)(C)C)c1",
+      "spectrum_hash": "213cb989e2e75a3fcc5b3cc9f93f03ae25f3ac1f85f60ae80d1301c7ebad3aeb"
+    },
+    {
+      "cas": "108-01-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-01-0.pt",
+      "formula": "C4H11NO",
+      "canonical": "CN(C)CCO",
+      "spectrum_hash": "18ff3f723a1b602bc2c1182decc50f79397c956ea2a23d73f4a869f473ee5b26"
+    },
+    {
+      "cas": "108-03-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-03-2.pt",
+      "formula": "C3H7NO2",
+      "canonical": "CCC[N+](=O)[O-]",
+      "spectrum_hash": "72849ae488ace89c1d1dfcfd0aca6b92448d84faa7e33a78ee3d636773968156"
+    },
+    {
+      "cas": "108-18-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-18-9.pt",
+      "formula": "C6H15N",
+      "canonical": "CC(C)NC(C)C",
+      "spectrum_hash": "57d18da7751e11d742a68fe30b70d2a3aeb16d651dfd7423cd8f543261055139"
+    },
+    {
+      "cas": "108-50-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-50-9.pt",
+      "formula": "C6H8N2",
+      "canonical": "Cc1cncc(C)n1",
+      "spectrum_hash": "fcd65380ebf0dc07e355361b8c313569de4a0547401487c814a7827d54c7005b"
+    },
+    {
+      "cas": "108-73-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-73-6.pt",
+      "formula": "C6H6O3",
+      "canonical": "Oc1cc(O)cc(O)c1",
+      "spectrum_hash": "bb2adf1d98f7dabcd2a5ab278fec17560ca0970aa77e9fd4ee8d692da877c3b2"
+    },
+    {
+      "cas": "108-88-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-88-3.pt",
+      "formula": "C7H8",
+      "canonical": "Cc1ccccc1",
+      "spectrum_hash": "a84e636376870c1bdc53b51d428eba2a8cb970be10293886aa4bc3520e342787"
+    },
+    {
+      "cas": "108-98-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/108-98-5.pt",
+      "formula": "C6H6S",
+      "canonical": "Sc1ccccc1",
+      "spectrum_hash": "70d6e0938afb98534d40838b6afadbec7eadf6973a6957ec490b065fe9a9dfd1"
+    },
+    {
+      "cas": "109-73-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/109-73-9.pt",
+      "formula": "C4H11N",
+      "canonical": "CCCCN",
+      "spectrum_hash": "989ed539dc092bf752e9ea58767a3c28d6821fa849d07ecf12d6a40bbe5de784"
+    },
+    {
+      "cas": "109-78-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/109-78-4.pt",
+      "formula": "C3H5NO",
+      "canonical": "N#CCCO",
+      "spectrum_hash": "fd70e2dc6107de8b1f0f88f9cfd191742886171ae0b1314d74f417103811b801"
+    },
+    {
+      "cas": "109-89-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/109-89-7.pt",
+      "formula": "C4H11N",
+      "canonical": "CCNCC",
+      "spectrum_hash": "49856ea4d9cb4f1a02ffee0cb80744545e89e067abb50b5019df6c34d7e8668f"
+    },
+    {
+      "cas": "109-93-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/109-93-3.pt",
+      "formula": "C4H6O",
+      "canonical": "C=COC=C",
+      "spectrum_hash": "9a0502bdc2d59ab75dc9e6460b49cc8304e3c7f4db02a55b0b53cb2f33f211bf"
+    },
+    {
+      "cas": "109-94-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/109-94-4.pt",
+      "formula": "C3H6O2",
+      "canonical": "CCOC=O",
+      "spectrum_hash": "b04036f535c6572186867af5bfb1c6514d144614a226bade7797c16720fca4df"
+    },
+    {
+      "cas": "110-05-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-05-4.pt",
+      "formula": "C8H18O2",
+      "canonical": "CC(C)(C)OOC(C)(C)C",
+      "spectrum_hash": "d650f6b15e754ed65766c3345e09432bed6e6e71aabb50a8d4da7d7b6a356c2a"
+    },
+    {
+      "cas": "110-45-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-45-2.pt",
+      "formula": "C6H12O2",
+      "canonical": "CC(C)CCOC=O",
+      "spectrum_hash": "f41039a1222505f2ec514a95f24bdef23854f5d5a424e1b2147abb19c70f94a8"
+    },
+    {
+      "cas": "110-56-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-56-5.pt",
+      "formula": "C4H8Cl2",
+      "canonical": "ClCCCCCl",
+      "spectrum_hash": "afe2807f34bcad1063dac6aa617ac036b06b370094f47f38077c5e24b57f038d"
+    },
+    {
+      "cas": "110-58-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-58-7.pt",
+      "formula": "C5H13N",
+      "canonical": "CCCCCN",
+      "spectrum_hash": "c0bc240a96937479ff82a7bad4d955da5da68d6c99d94178d03f7de4a0b2e1dc"
+    },
+    {
+      "cas": "110-63-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-63-4.pt",
+      "formula": "C4H10O2",
+      "canonical": "OCCCCO",
+      "spectrum_hash": "261892fae5d8d3bf79f4b2b0b519421f8561ac46e0838990c823a3c2c2963c17"
+    },
+    {
+      "cas": "110-66-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-66-7.pt",
+      "formula": "C5H12S",
+      "canonical": "CCCCCS",
+      "spectrum_hash": "bc8abf550d2f043ad972e88099e76d6a4cede45d9daf574cd8531b2c6163adbd"
+    },
+    {
+      "cas": "110-71-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-71-4.pt",
+      "formula": "C4H10O2",
+      "canonical": "COCCOC",
+      "spectrum_hash": "42268e5eeac64152b852818b1faa06fc7d01255e3003780e029b016c9322c847"
+    },
+    {
+      "cas": "110-89-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-89-4.pt",
+      "formula": "C5H11N",
+      "canonical": "C1CCNCC1",
+      "spectrum_hash": "676ab6780dc156149de2e506aaa3c06ae5ea3b3af050a253d5a63cf82f18d8f3"
+    },
+    {
+      "cas": "110-96-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110-96-3.pt",
+      "formula": "C8H19N",
+      "canonical": "CC(C)CNCC(C)C",
+      "spectrum_hash": "f59a402b74954c3186a2f17a77e0d4957a79dfb1f9bc07a830fd1dbaec216178"
+    },
+    {
+      "cas": "110013-89-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/110013-89-3.pt",
+      "formula": "C10H9N",
+      "canonical": "C=Cc1cccc(CC#N)c1",
+      "spectrum_hash": "01f85079e014efc0f3bda027847ff7b5695a3a109fc3d1c6c0e2b45959051ef9"
+    },
+    {
+      "cas": "111-35-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/111-35-3.pt",
+      "formula": "C5H12O2",
+      "canonical": "CCOCCCO",
+      "spectrum_hash": "2a798a3ee1eb2c255531b9a6b7badaf743d46a87d3fd335adfe8a2a41151f034"
+    },
+    {
+      "cas": "111-43-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/111-43-3.pt",
+      "formula": "C6H14O",
+      "canonical": "CCCOCCC",
+      "spectrum_hash": "935990c0e50aee712a881923610563f77a375bf41e4aef7cbeb733ac73e1953d"
+    },
+    {
+      "cas": "111-88-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/111-88-6.pt",
+      "formula": "C8H18S",
+      "canonical": "CCCCCCCCS",
+      "spectrum_hash": "ee7e4967acc5caf46921a133b286717a6386642aec034557bf3e0b5d378b46b5"
+    },
+    {
+      "cas": "111-96-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/111-96-6.pt",
+      "formula": "C6H14O3",
+      "canonical": "COCCOCCOC",
+      "spectrum_hash": "9a53a4f1232c5aa79ac62a29f49f55d5153263464a89e221c6a74379fec0b33d"
+    },
+    {
+      "cas": "1113-02-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1113-02-6.pt",
+      "formula": "C5H12NO4PS",
+      "canonical": "CNC(=O)CSP(=O)(OC)OC",
+      "spectrum_hash": "2f117ed124f08fba728a01cad7b149bed6ad8eefe0a18d910c28b4d56d28e719"
+    },
+    {
+      "cas": "112-15-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-15-2.pt",
+      "formula": "C8H16O4",
+      "canonical": "CCOCCOCCOC(C)=O",
+      "spectrum_hash": "be9e30cb259f9aa5e20fda852bce2fb0da35b66c5842f67fcadc18b2e0888ffb"
+    },
+    {
+      "cas": "112-23-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-23-2.pt",
+      "formula": "C8H16O2",
+      "canonical": "CCCCCCCOC=O",
+      "spectrum_hash": "4db501452dfb9680eb6c2513e26dbd33903f08fadc8562abb6f59841a8d3f3cb"
+    },
+    {
+      "cas": "112-27-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-27-6.pt",
+      "formula": "C6H14O4",
+      "canonical": "OCCOCCOCCO",
+      "spectrum_hash": "41a6516aabb26086c50108e0fb8429605d3ee419c35d7be8e7ada135009b948e"
+    },
+    {
+      "cas": "112-31-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-31-2.pt",
+      "formula": "C10H20O",
+      "canonical": "CCCCCCCCCC=O",
+      "spectrum_hash": "a8d08f957437a55fef43a31aa274a1c4c2b050c6ad6add04780057994b606790"
+    },
+    {
+      "cas": "112-44-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-44-7.pt",
+      "formula": "C11H22O",
+      "canonical": "CCCCCCCCCCC=O",
+      "spectrum_hash": "82379cad45321faa24f437ff6b0b50e9efd2903d379384abdf453577d70f9070"
+    },
+    {
+      "cas": "112-59-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/112-59-4.pt",
+      "formula": "C10H22O3",
+      "canonical": "CCCCCCOCCOCCO",
+      "spectrum_hash": "6198c29b746ac228dadb52e2f4239cf6a5083398f5ccfb0c773b377336f730b4"
+    },
+    {
+      "cas": "1120-62-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1120-62-3.pt",
+      "formula": "C6H10",
+      "canonical": "CC1C=CCC1",
+      "spectrum_hash": "15d08ffeaa8e09e04cd8a135b01abac20eaaee4d2f417a00f50af0f1af4cff53"
+    },
+    {
+      "cas": "1121-89-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1121-89-7.pt",
+      "formula": "C5H7NO2",
+      "canonical": "O=C1CCCC(=O)N1",
+      "spectrum_hash": "4ce1874ada9da109f5db3d0e6a41024196be052b486156abc6a44d9a63a4eb0d"
+    },
+    {
+      "cas": "1124-07-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1124-07-8.pt",
+      "formula": "C7H6Cl2O",
+      "canonical": "Cc1cc(O)c(Cl)cc1Cl",
+      "spectrum_hash": "0a50e5b51382234fa1f35a2016d801bd989d831e39a07704f8f32fe07a4ed6ea"
+    },
+    {
+      "cas": "115-10-6",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/115-10-6.pt",
+      "formula": "C2H6O",
+      "canonical": "COC",
+      "spectrum_hash": "ffe31a8f936bacdbefc1396c6ef6ea546deaaafa0337bc95818e63ea86ee6731"
+    },
+    {
+      "cas": "115-17-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/115-17-3.pt",
+      "formula": "C2HBr3O",
+      "canonical": "O=CC(Br)(Br)Br",
+      "spectrum_hash": "bca2c7a9daea78a4a1f88d95c8676e4ab932337ea27780533bf0d5e335748678"
+    },
+    {
+      "cas": "119-65-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/119-65-3.pt",
+      "formula": "C9H7N",
+      "canonical": "c1ccc2cnccc2c1",
+      "spectrum_hash": "abb64a612d22bd083320017aa04fb61bc68c350a501a6654d797eee38dfcca23"
+    },
+    {
+      "cas": "1192-18-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1192-18-3.pt",
+      "formula": "C7H14",
+      "canonical": "CC1CCCC1C",
+      "spectrum_hash": "76919f0a2d0fb701947ca7a9849308cba77c72856c658c67ca2350a6fbe6c01c"
+    },
+    {
+      "cas": "1194-98-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1194-98-5.pt",
+      "formula": "C7H6O3",
+      "canonical": "O=Cc1cc(O)ccc1O",
+      "spectrum_hash": "770f4e2fdf29f4b10ca8740ca8f1687bbea4706fa0da9f0b2dee9fb47bceb81b"
+    },
+    {
+      "cas": "1196-95-8",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/1196-95-8.pt",
+      "formula": "C9H14Br2",
+      "canonical": "BrC1(Br)C2CCCCCCC21",
+      "spectrum_hash": "76a314d81f3827f235ec6d696c05d8f7525e7606226e206795c2259b9ae33472"
+    },
+    {
+      "cas": "120-80-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/120-80-9.pt",
+      "formula": "C6H6O2",
+      "canonical": "Oc1ccccc1O",
+      "spectrum_hash": "f26837aa7750ce07c6ed2ccd792f6253fa4e91ca8f36fbeeef310fcc78900cab"
+    },
+    {
+      "cas": "1200-67-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1200-67-5.pt",
+      "formula": "C11H18O2",
+      "canonical": "CC1(C)C2CCC1(C)C(OC=O)C2",
+      "spectrum_hash": "8ed83cc7a212361b57cf3294752e6cde59517cd28e058340f936cd5e7334209e"
+    },
+    {
+      "cas": "121-33-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/121-33-5.pt",
+      "formula": "C8H8O3",
+      "canonical": "COc1cc(C=O)ccc1O",
+      "spectrum_hash": "edf7d12fcd645efee6c2338e4668338bbddb4cbc448658378047121f2147ca2d"
+    },
+    {
+      "cas": "122-03-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/122-03-2.pt",
+      "formula": "C10H12O",
+      "canonical": "CC(C)c1ccc(C=O)cc1",
+      "spectrum_hash": "de716e9431fa8f29edd3bb4aa443e689dc088f050c9c7b1b93c4c6524898962d"
+    },
+    {
+      "cas": "122-51-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/122-51-0.pt",
+      "formula": "C7H16O3",
+      "canonical": "CCOC(OCC)OCC",
+      "spectrum_hash": "6cc13b0153200fc8d7b6df89e49a6b70b83d3fabbd214359c723d57f05591fac"
+    },
+    {
+      "cas": "122-72-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/122-72-5.pt",
+      "formula": "C11H14O2",
+      "canonical": "CC(=O)OCCCc1ccccc1",
+      "spectrum_hash": "2a4e83de73a7a4211df8f8b9b9aafc43bf75de0b7bf8fd0e959fc05d2d8caeeb"
+    },
+    {
+      "cas": "123-15-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/123-15-9.pt",
+      "formula": "C6H12O",
+      "canonical": "CCCC(C)C=O",
+      "spectrum_hash": "5c31ea3bc9c24986f88debcb6ce8862e6caa5f4b8cdfe3a1e323617b4f07a5bb"
+    },
+    {
+      "cas": "123-32-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/123-32-0.pt",
+      "formula": "C6H8N2",
+      "canonical": "Cc1cnc(C)cn1",
+      "spectrum_hash": "e3393f7ac0931c20ad7bac86d7538b686a88f7163fe8fea8ae3c5ab4571d7901"
+    },
+    {
+      "cas": "123-56-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/123-56-8.pt",
+      "formula": "C4H5NO2",
+      "canonical": "O=C1CCC(=O)N1",
+      "spectrum_hash": "005075a059ace1831a5b1a13aa8acadf3691725e2f3376754ecd804b301c84cc"
+    },
+    {
+      "cas": "123-75-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/123-75-1.pt",
+      "formula": "C4H9N",
+      "canonical": "C1CCNC1",
+      "spectrum_hash": "1ae5e0204ba70584a546cade553b1f0fd78da8060d2151d2dd1ef1e93345eba8"
+    },
+    {
+      "cas": "124-11-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/124-11-8.pt",
+      "formula": "C9H18",
+      "canonical": "C=CCCCCCCC",
+      "spectrum_hash": "ff4040a3e5b2c187ed1880545e44e2cda2e2b26127e5fd64600ba366a047e30a"
+    },
+    {
+      "cas": "124-13-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/124-13-0.pt",
+      "formula": "C8H16O",
+      "canonical": "CCCCCCCC=O",
+      "spectrum_hash": "d34b5f5a66d5ed78a1860d7a8f0d2612982c7d04b63624609b36592a16707dc9"
+    },
+    {
+      "cas": "124-18-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/124-18-5.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCCCCCC",
+      "spectrum_hash": "427975c6da29eba1da5b819258073e6f29fddcd06b11b41d1fafa04738a883d1"
+    },
+    {
+      "cas": "124-22-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/124-22-1.pt",
+      "formula": "C12H27N",
+      "canonical": "CCCCCCCCCCCCN",
+      "spectrum_hash": "8d288c3e197eb1520f0158474e1f296b16ca1bec1d535dacbd7e0b4e2df71ef7"
+    },
+    {
+      "cas": "124-48-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/124-48-1.pt",
+      "formula": "CHBr2Cl",
+      "canonical": "ClC(Br)Br",
+      "spectrum_hash": "97562acdd2dd4aa5e62a02b84429a62ecd5c747a432b77b29c2b7bfa5cb64e98"
+    },
+    {
+      "cas": "130-15-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/130-15-4.pt",
+      "formula": "C10H6O2",
+      "canonical": "O=C1C=CC(=O)c2ccccc21",
+      "spectrum_hash": "4b728ea471dad8e202ca4a99aa6d2649c7f54852046008405c63c6b6ec0c4647"
+    },
+    {
+      "cas": "131-91-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/131-91-9.pt",
+      "formula": "C10H7NO2",
+      "canonical": "O=Nc1c(O)ccc2ccccc12",
+      "spectrum_hash": "9d75213df17e4b16109a0762760febb3c5f2a94e528a9f70290f7fe270ca6d28"
+    },
+    {
+      "cas": "13151-34-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/13151-34-3.pt",
+      "formula": "C11H24",
+      "canonical": "CCCCCCCC(C)CC",
+      "spectrum_hash": "036e50bf701c37ff517f38a5b18fbd55764b92bdb5fcb51be9c2fc8204f2c2ef"
+    },
+    {
+      "cas": "132-65-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/132-65-0.pt",
+      "formula": "C12H8S",
+      "canonical": "c1ccc2c(c1)sc1ccccc12",
+      "spectrum_hash": "d00a7e366d3c679feee0de85b19ebe15e88c0a04e35d5994900d0833370b8d0d"
+    },
+    {
+      "cas": "134-49-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/134-49-6.pt",
+      "formula": "C11H15NO",
+      "canonical": "CC1NCCOC1c1ccccc1",
+      "spectrum_hash": "1e18c80c1067055c1f27de1cc4e40737946f422127edc7f6b0761030e03e4f2a"
+    },
+    {
+      "cas": "13434-12-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/13434-12-3.pt",
+      "formula": "C7H15NO",
+      "canonical": "CC(=O)NCCC(C)C",
+      "spectrum_hash": "7ae0f16782b457bf80600de986bcffe7ccc0a545f809fcc452eaad34344062e8"
+    },
+    {
+      "cas": "137-18-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/137-18-8.pt",
+      "formula": "C8H8O2",
+      "canonical": "CC1=CC(=O)C(C)=CC1=O",
+      "spectrum_hash": "4b9c99fb7797912ac04ff2f3ca3744afec91aae375c3af5003ef1c06dcbc0778"
+    },
+    {
+      "cas": "137-26-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/137-26-8.pt",
+      "formula": "C6H12N2S4",
+      "canonical": "CN(C)C(=S)SSC(=S)N(C)C",
+      "spectrum_hash": "1013a891eea1e9452ed06d4533702c48bbf5a06e05a9c5319c6e1c089b200f4c"
+    },
+    {
+      "cas": "139-66-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/139-66-2.pt",
+      "formula": "C12H10S",
+      "canonical": "c1ccc(Sc2ccccc2)cc1",
+      "spectrum_hash": "1d758495f87a3e4bd34d6a83a910c57d71b44795296abefb5464fc2f5154f795"
+    },
+    {
+      "cas": "141-06-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/141-06-0.pt",
+      "formula": "C8H16O2",
+      "canonical": "CCCCC(=O)OCCC",
+      "spectrum_hash": "d8f1c5fddb955fc19eb2170258789a0a9873be92f51cc68c98a76cf53b24852a"
+    },
+    {
+      "cas": "142-19-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/142-19-8.pt",
+      "formula": "C10H18O2",
+      "canonical": "C=CCOC(=O)CCCCCC",
+      "spectrum_hash": "45ea5004d5d6ee2cfa96db14ee77d0aaab262a6dc7b44b3604fe92d04240b875"
+    },
+    {
+      "cas": "142-28-9",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/142-28-9.pt",
+      "formula": "C3H6Cl2",
+      "canonical": "ClCCCCl",
+      "spectrum_hash": "f6276007b97cb39aa3ab21573c3053b41d5e2471cc9d906e4ad637fb7f01599d"
+    },
+    {
+      "cas": "142-29-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/142-29-0.pt",
+      "formula": "C5H8",
+      "canonical": "C1=CCCC1",
+      "spectrum_hash": "235d920b36626dd7be9b14462bd85981da93d4511daf7e37812f0343e671ccc1"
+    },
+    {
+      "cas": "1423-60-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1423-60-5.pt",
+      "formula": "C4H4O",
+      "canonical": "C#CC(C)=O",
+      "spectrum_hash": "cac1591cb9f45f82f578a9d0316825afcd7f5fed71335de368decd8e4ecec03a"
+    },
+    {
+      "cas": "14321-27-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/14321-27-8.pt",
+      "formula": "C9H13N",
+      "canonical": "CCNCc1ccccc1",
+      "spectrum_hash": "5044b1ea9c58a1ce6992712dc6559ce2443c09af13f708b5256c000c41af307d"
+    },
+    {
+      "cas": "14360-50-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/14360-50-0.pt",
+      "formula": "C10H14O2",
+      "canonical": "CCCCCC(=O)c1ccco1",
+      "spectrum_hash": "fc81d65c7465405efdd72fd921af87ce5dfabec08f62167dd041b71f9b23d655"
+    },
+    {
+      "cas": "1445-45-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1445-45-0.pt",
+      "formula": "C5H12O3",
+      "canonical": "COC(C)(OC)OC",
+      "spectrum_hash": "5ef1ed82da6781599d51deb09f3e98a06f527f1027df6563542083d3d9692c3d"
+    },
+    {
+      "cas": "14508-49-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/14508-49-7.pt",
+      "formula": "C4H3ClN2",
+      "canonical": "Clc1cnccn1",
+      "spectrum_hash": "4733ecd43b0c5066aab256c519f79b852a453d7c90e07c049e2a0107d1936276"
+    },
+    {
+      "cas": "14676-29-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/14676-29-0.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCC(CC)C(C)C",
+      "spectrum_hash": "29405b07191e56d7e8e67c485c257f6810dba6e11f3aca7ba2b58d5d72166dff"
+    },
+    {
+      "cas": "147-82-0",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/147-82-0.pt",
+      "formula": "C6H4Br3N",
+      "canonical": "Nc1c(Br)cc(Br)cc1Br",
+      "spectrum_hash": "13694e32c23c5b811aac4452ce148b3e18fb7c6c444a52fad92cbfa69d7cc412"
+    },
+    {
+      "cas": "14749-45-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/14749-45-2.pt",
+      "formula": "C9H15ClO3",
+      "canonical": "CCOC(=O)C(CCCCl)C(C)=O",
+      "spectrum_hash": "c654ec03a830c0fb92d3788532a614846cc3b6d732fa052020d52d21e7f6477e"
+    },
+    {
+      "cas": "149-73-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/149-73-5.pt",
+      "formula": "C4H10O3",
+      "canonical": "COC(OC)OC",
+      "spectrum_hash": "4d57f1b74c63ed6b9105340f3c668472ed375b7677453305beddfaa51b357873"
+    },
+    {
+      "cas": "151-10-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/151-10-0.pt",
+      "formula": "C8H10O2",
+      "canonical": "COc1cccc(OC)c1",
+      "spectrum_hash": "18d7d2cfa05361e55346170d779f4d9a7f5e8b73c467250dd939aad910df6a14"
+    },
+    {
+      "cas": "152-18-1",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/152-18-1.pt",
+      "formula": "C3H9O3PS",
+      "canonical": "COP(=S)(OC)OC",
+      "spectrum_hash": "1aad481884cae1041f83e5baf16687bd42e52c65700a2992a976da370c39bdc7"
+    },
+    {
+      "cas": "15232-76-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15232-76-5.pt",
+      "formula": "C8H14",
+      "canonical": "CCC#CCCCC",
+      "spectrum_hash": "e1b3167425201fb1fe8ac2c5b477ddb31ec82df2675f4416996b72c09ed44693"
+    },
+    {
+      "cas": "156-59-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/156-59-2.pt",
+      "formula": "C2H2Cl2",
+      "canonical": "ClC=CCl",
+      "spectrum_hash": "c147975bddbc7f8eab7424ccf894d9600fb2642da40035524d9a386f2896151b"
+    },
+    {
+      "cas": "157-40-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/157-40-4.pt",
+      "formula": "C5H8",
+      "canonical": "C1CC12CC2",
+      "spectrum_hash": "c0327cbb3dc644b79841572047d3157f1ab26231c45bf4d801eb8f412b6c738a"
+    },
+    {
+      "cas": "1573-28-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1573-28-0.pt",
+      "formula": "C9H20O",
+      "canonical": "CCC(C)(O)CCC(C)C",
+      "spectrum_hash": "c6ca557ea1925a2d6fae4c5b2c7fbacfa2cda0e5e375894ba997973873dd68f8"
+    },
+    {
+      "cas": "15840-60-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15840-60-5.pt",
+      "formula": "C7H14",
+      "canonical": "CCC=CC(C)C",
+      "spectrum_hash": "354efb2c29e585cee9ef5a631a80fd3f2727865c179b94c0b241c9802a4ff942"
+    },
+    {
+      "cas": "15869-80-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15869-80-4.pt",
+      "formula": "C9H20",
+      "canonical": "CCCCC(CC)CC",
+      "spectrum_hash": "074d38097142fa854665fc4124bdeeaa834794374d153b91f46df98e89a5b1c3"
+    },
+    {
+      "cas": "15869-85-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15869-85-9.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCC(C)CCCC",
+      "spectrum_hash": "d00bd4ef9595b57fc578af63a9ada35c96663bad9bb22f0c44f99138f121514b"
+    },
+    {
+      "cas": "15869-86-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15869-86-0.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCC(CC)CCC",
+      "spectrum_hash": "027ffc0efef389d6f11a4845829fa8719dbd51d9ffd8243b6b9a6ddb1a21b29b"
+    },
+    {
+      "cas": "15869-87-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15869-87-1.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCCC(C)(C)C",
+      "spectrum_hash": "4b8056c8034e20dfd3a8738d14b2e8c7d9d03a9015c9d5f5257492c8bbb0dde5"
+    },
+    {
+      "cas": "15869-93-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/15869-93-9.pt",
+      "formula": "C10H22",
+      "canonical": "CCCC(C)CC(C)CC",
+      "spectrum_hash": "443325300754fa340158817cf2fe24430b2a473e3282b14ae2318fe3b5cc7fb1"
+    },
+    {
+      "cas": "1587-04-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1587-04-8.pt",
+      "formula": "C10H12",
+      "canonical": "C=CCc1ccccc1C",
+      "spectrum_hash": "7d869d269569fd196a7179b183bf86e9f21c539c82c0823ebd302bfd7ff94cad"
+    },
+    {
+      "cas": "1609-93-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1609-93-4.pt",
+      "formula": "C3H3ClO2",
+      "canonical": "O=C(O)C=CCl",
+      "spectrum_hash": "b834c956a0e2565cb1e4357a1a6a0c3f93f2d5f713b8f8438e4b75007a80c112"
+    },
+    {
+      "cas": "1630-94-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1630-94-0.pt",
+      "formula": "C5H10",
+      "canonical": "CC1(C)CC1",
+      "spectrum_hash": "a059de8e0cc3871d64f329eb159e447462f459e9aa23fdd1c359862555887e11"
+    },
+    {
+      "cas": "1632-16-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1632-16-2.pt",
+      "formula": "C8H16",
+      "canonical": "C=C(CC)CCCC",
+      "spectrum_hash": "060f80d4ff80ad060ef7a542c231bb3376864becdae3ecf77e6b33cb269cea6a"
+    },
+    {
+      "cas": "1636-39-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1636-39-1.pt",
+      "formula": "C10H18",
+      "canonical": "C1CCC(C2CCCC2)C1",
+      "spectrum_hash": "7a9b0d275010e8e62e0910e746a39d74c94959aea86fc895ab3f631b71e7bfff"
+    },
+    {
+      "cas": "16746-86-4",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/16746-86-4.pt",
+      "formula": "C8H16",
+      "canonical": "C=C(C)C(C)CCC",
+      "spectrum_hash": "bc873b51249b53e6137ba26229a2bac96f7ad24b0ddb40a78293d33d26915322"
+    },
+    {
+      "cas": "16747-25-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/16747-25-4.pt",
+      "formula": "C9H20",
+      "canonical": "CCCC(C)C(C)(C)C",
+      "spectrum_hash": "2dc88643e134d6c4c72801f496b5d4e0b40036de29f50a0c4ef71f3fa6e22d4e"
+    },
+    {
+      "cas": "16747-28-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/16747-28-7.pt",
+      "formula": "C9H20",
+      "canonical": "CCCC(C)(C)C(C)C",
+      "spectrum_hash": "474a0c7275c08b1c647703f781c2b8cb2e3b2daccc9da86bc1ef308a9ef921a5"
+    },
+    {
+      "cas": "16747-30-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/16747-30-1.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)(C)CC(C)C",
+      "spectrum_hash": "021a321339240581b95deac52824980ca018e4eb3101ca9bcde03af8064eee06"
+    },
+    {
+      "cas": "16747-31-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/16747-31-2.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)C(C)(C)CC",
+      "spectrum_hash": "99928173318db1c35c943ae541829e8ac460fd84b2ea919a08edf807f665fe96"
+    },
+    {
+      "cas": "16747-50-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/16747-50-5.pt",
+      "formula": "C8H16",
+      "canonical": "CCC1(C)CCCC1",
+      "spectrum_hash": "d48b75a5f00e9c80a02c8dcfebb80162d09b5504b03a2e8819fee69e1f6c5bd7"
+    },
+    {
+      "cas": "1678-81-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1678-81-5.pt",
+      "formula": "C9H18",
+      "canonical": "CC1CCCC(C)C1C",
+      "spectrum_hash": "5c53f1843378e99e1871fafe69e2b5fec25077bdf43b04d8508973c43d387313"
+    },
+    {
+      "cas": "1678-93-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1678-93-9.pt",
+      "formula": "C10H20",
+      "canonical": "CCCCC1CCCCC1",
+      "spectrum_hash": "88dc535c6ee266be499b17f2c6e13a6b57204fe43a6c1c4af8b5f75f721368a5"
+    },
+    {
+      "cas": "1678-98-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1678-98-4.pt",
+      "formula": "C10H20",
+      "canonical": "CC(C)CC1CCCCC1",
+      "spectrum_hash": "f181e6ffd6323046899936cc49532836bd8c77e6481a2a4e5cd9bccaa4a1c869"
+    },
+    {
+      "cas": "17042-16-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/17042-16-9.pt",
+      "formula": "C7H14O",
+      "canonical": "CCC(=O)C(C)CC",
+      "spectrum_hash": "1032dfb22c8f1fe6486ce385438544b5f4e52a256ca1da8845eb08047f4d6749"
+    },
+    {
+      "cas": "1708-29-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1708-29-8.pt",
+      "formula": "C4H6O",
+      "canonical": "C1=CCOC1",
+      "spectrum_hash": "82407e7b35ff07b5ddc85e29acce79d12dc5d55307afa310a16a5a9e3d80538d"
+    },
+    {
+      "cas": "17227-47-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/17227-47-3.pt",
+      "formula": "C8H6N2O",
+      "canonical": "O=c1nc[nH]c2ccccc12",
+      "spectrum_hash": "81d32390866429f563736511023afc70839bfda9b3cb4689fc282a5bcb3d791a"
+    },
+    {
+      "cas": "17301-23-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/17301-23-4.pt",
+      "formula": "C13H28",
+      "canonical": "CCCCCC(C)CCCC(C)C",
+      "spectrum_hash": "d7dd34a736235540bb25beef07879a59822da3f5b9f1c5a6108bb5a70d17517c"
+    },
+    {
+      "cas": "17301-94-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/17301-94-9.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCC(C)CCC",
+      "spectrum_hash": "f5485b179fb7a2e8eaa7e6bf4173837ac9d39fa6702721bd81c61c9ad4e0998b"
+    },
+    {
+      "cas": "17302-01-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/17302-01-1.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCC(C)(CC)CC",
+      "spectrum_hash": "6f0ff2ba39f25eee7bdd739df1da6b01bd2d0ece7dca5f9d1f80432dbf4e70ab"
+    },
+    {
+      "cas": "1738-36-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1738-36-9.pt",
+      "formula": "C3H5NO",
+      "canonical": "COCC#N",
+      "spectrum_hash": "3e244c6e455d315b9884d2ff204e6dedc12b75a7a06dc7109030010b8bb97fc7"
+    },
+    {
+      "cas": "1758-88-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1758-88-9.pt",
+      "formula": "C10H14",
+      "canonical": "CCc1cc(C)ccc1C",
+      "spectrum_hash": "d7f6f125828592fc9e412de8d79895a91954859f429e82cb86d6d5ec62cd0f62"
+    },
+    {
+      "cas": "1779-19-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1779-19-7.pt",
+      "formula": "C5H10O3",
+      "canonical": "C1COCOCCO1",
+      "spectrum_hash": "45d07c7286be54c5f07894614441be462b305fb821ea5255e2e747efc4426629"
+    },
+    {
+      "cas": "1783-25-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1783-25-1.pt",
+      "formula": "C9H12N2",
+      "canonical": "CN(C)C=Nc1ccccc1",
+      "spectrum_hash": "0954da8b20a142d448b56aa7482225a087beed275b7b168a1cada8fbab56f8d0"
+    },
+    {
+      "cas": "1795-27-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1795-27-3.pt",
+      "formula": "C9H18",
+      "canonical": "CC1CC(C)CC(C)C1",
+      "spectrum_hash": "820285244d816356ea040fa3850413ff6e55127d8ee1b852749ab66629adeee2"
+    },
+    {
+      "cas": "1797-74-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1797-74-6.pt",
+      "formula": "C11H12O2",
+      "canonical": "C=CCOC(=O)Cc1ccccc1",
+      "spectrum_hash": "ab72f5322b11ef3a9cfc7496ce55aeccac84639f4375dc9e0b6565e9dea76b82"
+    },
+    {
+      "cas": "1864-94-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1864-94-4.pt",
+      "formula": "C7H6O2",
+      "canonical": "O=COc1ccccc1",
+      "spectrum_hash": "ca1e665a7fc15c88ad52d11f21a2ad65ba898d3beb3601efcaaed0dcf4acf2c5"
+    },
+    {
+      "cas": "1888-71-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1888-71-7.pt",
+      "formula": "C3Cl6",
+      "canonical": "ClC(Cl)=C(Cl)C(Cl)(Cl)Cl",
+      "spectrum_hash": "575b75867f321084b441ddac5607a068132ccc06d6a5b69224e20525da8d820b"
+    },
+    {
+      "cas": "18997-19-8",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/18997-19-8.pt",
+      "formula": "C6H11ClO2",
+      "canonical": "CC(C)(C)C(=O)OCCl",
+      "spectrum_hash": "a57972932000f5c5cca865116b74c198378d8c816bc0ad13f4ad61bd6e12fd87"
+    },
+    {
+      "cas": "1914-61-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1914-61-0.pt",
+      "formula": "C10H10O2S",
+      "canonical": "O=C(O)CSC=Cc1ccccc1",
+      "spectrum_hash": "9701399172e95794ded066b0473ae4472d8dda6d277fdbc77f359b60ea4ee3fa"
+    },
+    {
+      "cas": "1918-00-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1918-00-9.pt",
+      "formula": "C8H6Cl2O3",
+      "canonical": "COc1c(Cl)ccc(Cl)c1C(=O)O",
+      "spectrum_hash": "807a4d306e432a9604c8bb6e9070ee5c3c8d324853cf2fbb160421e7b9d5f4f1"
+    },
+    {
+      "cas": "1918-02-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1918-02-1.pt",
+      "formula": "C6H3Cl3N2O2",
+      "canonical": "Nc1c(Cl)c(Cl)nc(C(=O)O)c1Cl",
+      "spectrum_hash": "25ad55eba0b8505597cad34788120a814ac013d53b742a5cda4b09b034e98a05"
+    },
+    {
+      "cas": "1929-77-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/1929-77-7.pt",
+      "formula": "C10H21NOS",
+      "canonical": "CCCSC(=O)N(CCC)CCC",
+      "spectrum_hash": "7f399a9cb8baffc7d42a670dfe2904a11ab5f8ea0966bfbe49f3aa9a0cf23e76"
+    },
+    {
+      "cas": "19398-88-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/19398-88-0.pt",
+      "formula": "C10H20",
+      "canonical": "CCCC=CCCCCC",
+      "spectrum_hash": "f1a50766f014a3296f9102e33d27c082d83de8f352dec803557d1478cd867bfb"
+    },
+    {
+      "cas": "19780-40-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/19780-40-6.pt",
+      "formula": "C9H20O",
+      "canonical": "CCC(CC)CCC(C)O",
+      "spectrum_hash": "79fba7f6b6e17f18a8cfd16eea371d18fa7d0a82fc5b725f142a130028ba91eb"
+    },
+    {
+      "cas": "20348-51-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/20348-51-0.pt",
+      "formula": "C10H20",
+      "canonical": "CC=CCCCCCCC",
+      "spectrum_hash": "7dc82d8ef4adc1e667e7e5274d34c97bd230915ce3d4c7d25d619ea3d329bf48"
+    },
+    {
+      "cas": "2039-89-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2039-89-6.pt",
+      "formula": "C10H12",
+      "canonical": "C=Cc1cc(C)ccc1C",
+      "spectrum_hash": "509f982ada0f2b2dbdd170c05a150e1c0762a7526bf1f87c57b448a1bc62df5e"
+    },
+    {
+      "cas": "2039-93-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2039-93-2.pt",
+      "formula": "C10H12",
+      "canonical": "C=C(CC)c1ccccc1",
+      "spectrum_hash": "f06ab47bd8f9618bcddf7f853fe263a390006fc50949d453a25bb9a8018d51b1"
+    },
+    {
+      "cas": "2049-94-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2049-94-7.pt",
+      "formula": "C11H16",
+      "canonical": "CC(C)CCc1ccccc1",
+      "spectrum_hash": "1f598e2556c12a957b52fe7eb06313c8257273fb5fb2eeb1e7d0674e0235eb37"
+    },
+    {
+      "cas": "2049-95-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2049-95-8.pt",
+      "formula": "C11H16",
+      "canonical": "CCC(C)(C)c1ccccc1",
+      "spectrum_hash": "6fab21aec1a31b9fb2fbb34714f31e8d4314304cebabf408fac36f52e2ae24b7"
+    },
+    {
+      "cas": "2050-24-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2050-24-0.pt",
+      "formula": "C11H16",
+      "canonical": "CCc1cc(C)cc(CC)c1",
+      "spectrum_hash": "1991ce7be82c97a3a8d69e8d509368e82339e202c447a9df48a9e01afee26c5b"
+    },
+    {
+      "cas": "20513-25-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/20513-25-1.pt",
+      "formula": "C5H8N2S2",
+      "canonical": "CC1(C)NC(=S)NC1=S",
+      "spectrum_hash": "bdfa9896ca846c7e80f6a336b792f3b799fd7a4311212ee3e58adac9ffe43c9b"
+    },
+    {
+      "cas": "208-96-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/208-96-8.pt",
+      "formula": "C12H8",
+      "canonical": "C1=Cc2cccc3cccc1c23",
+      "spectrum_hash": "de3399c1316298937122aa3d7810b4df135533adee3e81c4cb7f691720e7cfcd"
+    },
+    {
+      "cas": "2108-05-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2108-05-6.pt",
+      "formula": "C7H14O",
+      "canonical": "CCCC=CCCO",
+      "spectrum_hash": "b7851d951375487ea2ced9b97be25747ca1f33a872e021a446de27d93683f396"
+    },
+    {
+      "cas": "2163-00-0",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/2163-00-0.pt",
+      "formula": "C6H12Cl2",
+      "canonical": "ClCCCCCCCl",
+      "spectrum_hash": "c02644c60c74ebc933c9c978a80d1d9eed05fddee99b203b8b87e129fdae703b"
+    },
+    {
+      "cas": "2175-91-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2175-91-9.pt",
+      "formula": "C8H10",
+      "canonical": "CC(C)=C1C=CC=C1",
+      "spectrum_hash": "37b52337827dc536095f19cffbe13390471697e9a955a5f1e117a5dfd7fa6215"
+    },
+    {
+      "cas": "2213-23-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2213-23-2.pt",
+      "formula": "C9H20",
+      "canonical": "CCCC(C)CC(C)C",
+      "spectrum_hash": "806dcfbabfdcfd919a091390f31554610c32260b3e88de5e453fdc550a11c77d"
+    },
+    {
+      "cas": "2213-32-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2213-32-3.pt",
+      "formula": "C7H14",
+      "canonical": "C=C(C)CC(C)C",
+      "spectrum_hash": "a8b8c09f62289662e6459057dbf784326f13952412f8cd908d1ef007b3b1200a"
+    },
+    {
+      "cas": "2216-30-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2216-30-0.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)CCC(C)C",
+      "spectrum_hash": "a82aae77852bc8a0ac25561e2ac8a22a0685a23b01b5036e2cc6577e20b542d3"
+    },
+    {
+      "cas": "2216-32-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2216-32-2.pt",
+      "formula": "C9H20",
+      "canonical": "CCCC(CC)CCC",
+      "spectrum_hash": "21f6d5e0d1a72c05420cd926d888b69834d635e34ffa559296dda2b6666ef398"
+    },
+    {
+      "cas": "2216-33-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2216-33-3.pt",
+      "formula": "C9H20",
+      "canonical": "CCCCCC(C)CC",
+      "spectrum_hash": "3cdb521143d18599bcb672a56173c65e1c42693104cf187e64308608f766cc2e"
+    },
+    {
+      "cas": "2216-34-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2216-34-4.pt",
+      "formula": "C9H20",
+      "canonical": "CCCCC(C)CCC",
+      "spectrum_hash": "e71cc20c7734bd91163e8fe21300a84135dec9d2fb09a0acd83552d8b85a9318"
+    },
+    {
+      "cas": "2216-35-5",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/2216-35-5.pt",
+      "formula": "C9H19Br",
+      "canonical": "CCCCCCCC(C)Br",
+      "spectrum_hash": "52d0651bb7cf8cbcad0595299247f090721ef162272fd085ba5e7e1e1ea202a6"
+    },
+    {
+      "cas": "2243-98-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2243-98-3.pt",
+      "formula": "C11H20",
+      "canonical": "C#CCCCCCCCCC",
+      "spectrum_hash": "9863e751842831dfd4ce3f7664e4b4808073f308ca34428646c1e35b66bab3b7"
+    },
+    {
+      "cas": "2253-73-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2253-73-8.pt",
+      "formula": "C4H7NS",
+      "canonical": "CC(C)N=C=S",
+      "spectrum_hash": "a13c05a41bd124ffac5933804005233af0a81576a09715fbed455de59bffdb4a"
+    },
+    {
+      "cas": "2270-20-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2270-20-4.pt",
+      "formula": "C11H14O2",
+      "canonical": "O=C(O)CCCCc1ccccc1",
+      "spectrum_hash": "5c1d4e3981ba3293670aea01151e2cd321fd2469813110a62d2699c794a73eeb"
+    },
+    {
+      "cas": "23074-10-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/23074-10-4.pt",
+      "formula": "C7H8O2",
+      "canonical": "CCc1ccc(C=O)o1",
+      "spectrum_hash": "aa05907dc3584fae29d8d9a99a26dd685a39966bd1e5b024bc659cb91aa874c1"
+    },
+    {
+      "cas": "23764-31-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/23764-31-0.pt",
+      "formula": "C6H16N2",
+      "canonical": "CCCNCCCN",
+      "spectrum_hash": "c0184fdce4bf612908ce154e5d996198ede6d441b40715ec9c04f27a2868d33b"
+    },
+    {
+      "cas": "2396-84-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2396-84-1.pt",
+      "formula": "C8H12O2",
+      "canonical": "CC=CC=CC(=O)OCC",
+      "spectrum_hash": "a661a9beb177124b90bc864fa49fc5aec124b46dbd9841c3a747a06c8d317b0f"
+    },
+    {
+      "cas": "2402-06-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2402-06-4.pt",
+      "formula": "C5H10",
+      "canonical": "CC1CC1C",
+      "spectrum_hash": "886b10a7553da229bbe6a47a2a9984e2cdb55ae63aa740bb6a7eb5bdd7c9556c"
+    },
+    {
+      "cas": "2417-90-5",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/2417-90-5.pt",
+      "formula": "C3H4BrN",
+      "canonical": "N#CCCBr",
+      "spectrum_hash": "c2b09fb3b8f06624a3f887c857d87461b1ecd5c77c9b336553223c70a001f91f"
+    },
+    {
+      "cas": "2425-74-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2425-74-3.pt",
+      "formula": "C5H11NO",
+      "canonical": "CC(C)(C)NC=O",
+      "spectrum_hash": "e7bdac092b2b3cc8419b8c6b9fd0592d0343203de23c05abde2cd515ee08132e"
+    },
+    {
+      "cas": "2432-74-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2432-74-8.pt",
+      "formula": "C6H12N2",
+      "canonical": "N#CCCCCCN",
+      "spectrum_hash": "acd2c4862a8f5b4818b9202860217683e9569b1a7d3358497ef73cd4a10143d4"
+    },
+    {
+      "cas": "24425-40-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/24425-40-9.pt",
+      "formula": "C9H11N",
+      "canonical": "Nc1ccc2c(c1)CCC2",
+      "spectrum_hash": "61658299d19df15545916dfe444724775ad9d0bd306b55dbd2d37b8de4472cb6"
+    },
+    {
+      "cas": "2463-45-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2463-45-8.pt",
+      "formula": "C4H5ClO3",
+      "canonical": "O=C1OCC(CCl)O1",
+      "spectrum_hash": "af45d298ccdfbe78208d85c0f730c5dc2d76e1f36b5fa17fcfb0789e74dbea47"
+    },
+    {
+      "cas": "253-82-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/253-82-7.pt",
+      "formula": "C8H6N2",
+      "canonical": "c1ccc2ncncc2c1",
+      "spectrum_hash": "a87a6758333edac9f3af383f6e77a1cdb7345814c13360c8ea06b5f4c0e91d37"
+    },
+    {
+      "cas": "2532-58-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2532-58-3.pt",
+      "formula": "C7H14",
+      "canonical": "CC1CCC(C)C1",
+      "spectrum_hash": "0a4e3a57b3682f3a77013a6b16316052e3d2d6c089711398afa5780f8f89c289"
+    },
+    {
+      "cas": "25415-62-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/25415-62-7.pt",
+      "formula": "C10H20O2",
+      "canonical": "CCCCCOC(=O)CC(C)C",
+      "spectrum_hash": "a580c3a1f252db58384b7f60c2068685b6a8c53f918a25d236319c86fa38f201"
+    },
+    {
+      "cas": "25496-08-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/25496-08-6.pt",
+      "formula": "C7H7F",
+      "canonical": "FCc1ccccc1",
+      "spectrum_hash": "06ac4231a92b2a607636d5a98a30a66fd1a03208b60f83b9e838c0cdb1110a7e"
+    },
+    {
+      "cas": "259-79-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/259-79-0.pt",
+      "formula": "C12H8",
+      "canonical": "c1ccc2c(c1)-c1ccccc1-2",
+      "spectrum_hash": "700fd2a00b0680e64381721add0e6688ce2cfabe5aaf33a8b9826f5bb9cbfc5c"
+    },
+    {
+      "cas": "2593-15-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2593-15-9.pt",
+      "formula": "C5H5Cl3N2OS",
+      "canonical": "CCOc1nc(C(Cl)(Cl)Cl)ns1",
+      "spectrum_hash": "6f367eff3681727a4685b54d449abff736212e7adbcb22597fae0be9dab4d5e6"
+    },
+    {
+      "cas": "2613-61-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2613-61-8.pt",
+      "formula": "C10H22",
+      "canonical": "CC(C)CC(C)CC(C)C",
+      "spectrum_hash": "81cc714395ce209139bb9cf515771d5adf458d950fd4235ef885980521b61bcc"
+    },
+    {
+      "cas": "2675-77-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2675-77-6.pt",
+      "formula": "C8H8Cl2O2",
+      "canonical": "COc1cc(Cl)c(OC)cc1Cl",
+      "spectrum_hash": "3b43569c0858678e626e4a11828d73c6d3e9837b943020f54b6fb07c6ce76c6b"
+    },
+    {
+      "cas": "271-89-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/271-89-6.pt",
+      "formula": "C8H6O",
+      "canonical": "c1ccc2occc2c1",
+      "spectrum_hash": "2cfce01ec51da7f29dea7d05cf2b72c7b1cdb39a60270a196c8be36c2f829231"
+    },
+    {
+      "cas": "2719-52-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2719-52-0.pt",
+      "formula": "C11H16",
+      "canonical": "CCCC(C)c1ccccc1",
+      "spectrum_hash": "01f2987d63927d15244348708c565098f47eae1ae3b925865359f61fb087eba4"
+    },
+    {
+      "cas": "2738-19-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2738-19-4.pt",
+      "formula": "C7H14",
+      "canonical": "CCCC=C(C)C",
+      "spectrum_hash": "acbfdaf073d02b75a8146966cc3a4db8f1f45ae7a49f522602284b23c20353ee"
+    },
+    {
+      "cas": "275-51-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/275-51-4.pt",
+      "formula": "C10H8",
+      "canonical": "c1ccc2cccc-2cc1",
+      "spectrum_hash": "d8f22bddf4c08d46c29e72c73de7c2276cd77c77943cb1f36f44b61e06a5931b"
+    },
+    {
+      "cas": "2787-45-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2787-45-3.pt",
+      "formula": "C6H10",
+      "canonical": "C=CC(C)=CC",
+      "spectrum_hash": "13f4fa58533536ec1489821d535228b140e89670b35025d320b03953553b8aa6"
+    },
+    {
+      "cas": "279-23-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/279-23-2.pt",
+      "formula": "C7H12",
+      "canonical": "C1CC2CCC1C2",
+      "spectrum_hash": "8368d2bf29d99c38e175843de4b3ed701522d3100faec01a138dba146e103f2d"
+    },
+    {
+      "cas": "2809-67-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2809-67-8.pt",
+      "formula": "C8H14",
+      "canonical": "CC#CCCCCC",
+      "spectrum_hash": "ad0d4d98dedd8016315b4b431eee3043fd8b0def290a11b74f24a830f348e199"
+    },
+    {
+      "cas": "2809-69-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2809-69-0.pt",
+      "formula": "C6H6",
+      "canonical": "CC#CC#CC",
+      "spectrum_hash": "baa55f67fca6b6252fc338e35a0c4943a9b8aa8375ce1d55eaab244377cba250"
+    },
+    {
+      "cas": "281-23-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/281-23-2.pt",
+      "formula": "C10H16",
+      "canonical": "C1C2CC3CC1CC(C2)C3",
+      "spectrum_hash": "35ef66ec9713fba677ec41b5cae7e77f8c1dd5dc448554923ff3994bbbdf6b8f"
+    },
+    {
+      "cas": "2847-72-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2847-72-5.pt",
+      "formula": "C11H24",
+      "canonical": "CCCCCCC(C)CCC",
+      "spectrum_hash": "41e8a9e110a627270b26f2dc1bd4386fcc6bb5e2fe97d9be2bc11adbaeec1120"
+    },
+    {
+      "cas": "286-20-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/286-20-4.pt",
+      "formula": "C6H10O",
+      "canonical": "C1CCC2OC2C1",
+      "spectrum_hash": "dd33e3fcd7692d211ea38ae35a65a8b507382b0b91d55ec8f409c8be891f2544"
+    },
+    {
+      "cas": "2870-04-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/2870-04-4.pt",
+      "formula": "C10H14",
+      "canonical": "CCc1c(C)cccc1C",
+      "spectrum_hash": "1a4f30252ec000134c747c2ac0ac2d54c9e2786cb9eecc0b1764b9f1243ffb2e"
+    },
+    {
+      "cas": "288-42-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/288-42-6.pt",
+      "formula": "C3H3NO",
+      "canonical": "c1cocn1",
+      "spectrum_hash": "f1abbead32c0000a50fa129fce1e8ad953eb66ce210daf6ffd26238c6a61bd39"
+    },
+    {
+      "cas": "288-47-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/288-47-1.pt",
+      "formula": "C3H3NS",
+      "canonical": "c1cscn1",
+      "spectrum_hash": "29863be2ccaa8fc588909c161a0caddbe53b4e962bea4df5484b250383f3a260"
+    },
+    {
+      "cas": "290-87-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/290-87-9.pt",
+      "formula": "C3H3N3",
+      "canonical": "c1ncncn1",
+      "spectrum_hash": "70ec59e22e571295f3dbceff4ae9db16c4e7f0e0b128efb6021af217a28efd72"
+    },
+    {
+      "cas": "291-64-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/291-64-5.pt",
+      "formula": "C7H14",
+      "canonical": "C1CCCCCC1",
+      "spectrum_hash": "726c167dc40557f35f941cb1f9f58d531d2fdf3eed4b78446ab2187a120add39"
+    },
+    {
+      "cas": "298-02-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/298-02-2.pt",
+      "formula": "C7H17O2PS3",
+      "canonical": "CCOP(=S)(OCC)SCSCC",
+      "spectrum_hash": "1c70e4754f6ffca6fe10f15163add3c6c27b6e2758a4634e7e42cf3d8eddc0e9"
+    },
+    {
+      "cas": "3010-02-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3010-02-4.pt",
+      "formula": "C6H12N2",
+      "canonical": "CCN(CC)CC#N",
+      "spectrum_hash": "b9a1c6fdabc0b3dee50ac4013785f8cd3c3c5af078a492ba0d6a8b9ad2609580"
+    },
+    {
+      "cas": "302-17-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/302-17-0.pt",
+      "formula": "C2H3Cl3O2",
+      "canonical": "OC(O)C(Cl)(Cl)Cl",
+      "spectrum_hash": "096fabe34b039213a55d11330a217ae52eabd21040318062aa503591b39e3c2f"
+    },
+    {
+      "cas": "3033-82-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3033-82-7.pt",
+      "formula": "C10H8ClN",
+      "canonical": "Cc1ccc2cccc(Cl)c2n1",
+      "spectrum_hash": "26186316fd610c3f318af2d5222a28f5bdbce0669127038ba351e6206e54bda9"
+    },
+    {
+      "cas": "3048-65-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3048-65-5.pt",
+      "formula": "C9H12",
+      "canonical": "C1=CCC2CC=CC2C1",
+      "spectrum_hash": "dbc43b26d6f37c57225ff1ea9a26a8a805cdb0afeb957a13a6bab4c4fce52e8f"
+    },
+    {
+      "cas": "3074-77-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3074-77-9.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)C(CC)CC",
+      "spectrum_hash": "e419d0720bd7dd9120d6cf1363baaef108d3175151119edc4d4fa036ff9306da"
+    },
+    {
+      "cas": "30950-27-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/30950-27-7.pt",
+      "formula": "C10H15NO",
+      "canonical": "C=C(C)C1CC=C(C=NO)CC1",
+      "spectrum_hash": "02df82a05d9d677d307a4acef44945b6b64fc7b203a6931e68da5dac64754058"
+    },
+    {
+      "cas": "3112-90-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3112-90-1.pt",
+      "formula": "C8H10O2S",
+      "canonical": "CS(=O)(=O)Cc1ccccc1",
+      "spectrum_hash": "31d0f0aad497db06f3c75efeaf60cae8899846a0c58410f07a5c112fc89ad096"
+    },
+    {
+      "cas": "31252-42-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/31252-42-3.pt",
+      "formula": "C12H17N",
+      "canonical": "c1ccc(CC2CCNCC2)cc1",
+      "spectrum_hash": "c3b6325dafde867c9758f1f660c9bce773e9bd48ba7f84044ef2b464c6d0dc7d"
+    },
+    {
+      "cas": "3164-73-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3164-73-6.pt",
+      "formula": "C7H13NO3",
+      "canonical": "O=[N+]([O-])CC1(O)CCCCC1",
+      "spectrum_hash": "d52ec5b07f41959d1a7d62edfd66c66e8385b8545152a186786d96923beb8cdb"
+    },
+    {
+      "cas": "3178-29-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3178-29-8.pt",
+      "formula": "C10H22",
+      "canonical": "CCCC(CCC)CCC",
+      "spectrum_hash": "6b770b90d51843dbc8fe298c0b3bb7aee3d10826a314609026ef3e62593b9f54"
+    },
+    {
+      "cas": "3214-41-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3214-41-3.pt",
+      "formula": "C8H14O2",
+      "canonical": "CCCC(=O)CCC(C)=O",
+      "spectrum_hash": "6ba8977cda631e33a7d44c6b304e2b42b12cb565ce752b4124c21c7620007536"
+    },
+    {
+      "cas": "334-48-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/334-48-5.pt",
+      "formula": "C10H20O2",
+      "canonical": "CCCCCCCCCC(=O)O",
+      "spectrum_hash": "2c71a3d78c8f72d3214980ffc36484a14f34731bde6fd82d3b5d89509fcf52d8"
+    },
+    {
+      "cas": "34662-31-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/34662-31-2.pt",
+      "formula": "C7H3ClN2O2",
+      "canonical": "N#Cc1cc(Cl)ccc1[N+](=O)[O-]",
+      "spectrum_hash": "79328fca75fbbbed3f081ac65ba42113fecd69f9937b0597a1a81b2226063ac4"
+    },
+    {
+      "cas": "348-54-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/348-54-9.pt",
+      "formula": "C6H6FN",
+      "canonical": "Nc1ccccc1F",
+      "spectrum_hash": "c7f8cbc3ef7ba53642277e7e1cc6faeb55f4f837a7fe9566b7c1ea651e50d3b9"
+    },
+    {
+      "cas": "352-93-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/352-93-2.pt",
+      "formula": "C4H10S",
+      "canonical": "CCSCC",
+      "spectrum_hash": "b59f6964f56298b1d4b4c7c32f5f5392489b54228c3a11949acc918c34b04d21"
+    },
+    {
+      "cas": "3522-94-9",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/3522-94-9.pt",
+      "formula": "C9H20",
+      "canonical": "CC(C)CCC(C)(C)C",
+      "spectrum_hash": "d3a14d734661211bd55adedda6750622d383c4cd3ddfe21880aa3bac1a760968"
+    },
+    {
+      "cas": "35854-86-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/35854-86-5.pt",
+      "formula": "C9H18O",
+      "canonical": "CCC=CCCCCCO",
+      "spectrum_hash": "253d1f0ec9ce04de2b0cbbc200d1fa1fb7024ac7135dbeb0cf8abff67e31d59f"
+    },
+    {
+      "cas": "363-72-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/363-72-4.pt",
+      "formula": "C6HF5",
+      "canonical": "Fc1cc(F)c(F)c(F)c1F",
+      "spectrum_hash": "29b922a16411cedf63f17230efdfed33e0d4e4bfe55fe715ab12032e0d0e9673"
+    },
+    {
+      "cas": "3638-35-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3638-35-5.pt",
+      "formula": "C6H12",
+      "canonical": "CC(C)C1CC1",
+      "spectrum_hash": "fc19997061d51fe195431a1823214613235e17716f73660d33ff04e89f9d1ddc"
+    },
+    {
+      "cas": "366-18-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/366-18-7.pt",
+      "formula": "C10H8N2",
+      "canonical": "c1ccc(-c2ccccn2)nc1",
+      "spectrum_hash": "4d14a9d5efbb88cbefd63dc1422a0af9fdbbab5cd9579d21660b239efd3aab04"
+    },
+    {
+      "cas": "3674-13-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/3674-13-3.pt",
+      "formula": "C5H8Br2O2",
+      "canonical": "CCOC(=O)C(Br)CBr",
+      "spectrum_hash": "b3c224ffbce22fd75443bb090610ced24e07e9b3c67dd749124b43d92da6362f"
+    },
+    {
+      "cas": "3683-22-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3683-22-5.pt",
+      "formula": "C7H14",
+      "canonical": "CC=CC(C)CC",
+      "spectrum_hash": "823a5960c992c03962b8b5988633ab309f2bccd59ebe9b088e78e403712857f7"
+    },
+    {
+      "cas": "372-09-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/372-09-8.pt",
+      "formula": "C3H3NO2",
+      "canonical": "N#CCC(=O)O",
+      "spectrum_hash": "8621f9deba9ed7699646718436eff15ac884cb2441fd7dae81759ef215c8298a"
+    },
+    {
+      "cas": "372-19-0",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/372-19-0.pt",
+      "formula": "C6H6FN",
+      "canonical": "Nc1cccc(F)c1",
+      "spectrum_hash": "9169a81f4ebbf31a59f323669801bdb67aa41bb98d12a9ab9ca9f31f82dab1b7"
+    },
+    {
+      "cas": "373-44-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/373-44-4.pt",
+      "formula": "C8H20N2",
+      "canonical": "NCCCCCCCCN",
+      "spectrum_hash": "3019ee45c42e9907e273ef4e8ae4ec39d4bfa7a2c1760733c5b2122483b12098"
+    },
+    {
+      "cas": "3769-23-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3769-23-1.pt",
+      "formula": "C7H14",
+      "canonical": "C=CCC(C)CC",
+      "spectrum_hash": "0e395ff4bfd9aa254816230b550698e8c31d3986f58960ba8fd1f03af27eae7f"
+    },
+    {
+      "cas": "3788-32-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3788-32-7.pt",
+      "formula": "C9H18",
+      "canonical": "CC(C)CC1CCCC1",
+      "spectrum_hash": "0105090af28badb32b2cf9b2bbf04428b9ac31bc9555a2f04fb77ce5eef02977"
+    },
+    {
+      "cas": "3809-32-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3809-32-3.pt",
+      "formula": "C8H16O",
+      "canonical": "CC1CCC(C)C(O)C1",
+      "spectrum_hash": "390ad8f2006ac1bb04be7c903dcce3c5b1f0d40c63eca992447e39ec6fc69826"
+    },
+    {
+      "cas": "383-63-1",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/383-63-1.pt",
+      "formula": "C4H5F3O2",
+      "canonical": "CCOC(=O)C(F)(F)F",
+      "spectrum_hash": "a3cf277a61bd6207a126129861678fa01a322f7349e86404322a35a1f0d7b1ff"
+    },
+    {
+      "cas": "38939-88-7",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/38939-88-7.pt",
+      "formula": "C7H6ClNO2",
+      "canonical": "Cc1ccc([N+](=O)[O-])c(Cl)c1",
+      "spectrum_hash": "28b3d651f900a1fb76cf3d802de5976147b74839b8d11523d4e9d6c30b3cc698"
+    },
+    {
+      "cas": "3913-02-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3913-02-8.pt",
+      "formula": "C12H26O",
+      "canonical": "CCCCCCC(CO)CCCC",
+      "spectrum_hash": "7b35262dc5f3392b1e1da8aea8bc3ac992ee6a440a41f61bfaf1accf5265b9a9"
+    },
+    {
+      "cas": "393-52-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/393-52-2.pt",
+      "formula": "C7H4ClFO",
+      "canonical": "O=C(Cl)c1ccccc1F",
+      "spectrum_hash": "ae7dcd2e98179ae723cc7a3503f7337a054b070a1567b8105462e9e5298aad66"
+    },
+    {
+      "cas": "3938-95-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3938-95-2.pt",
+      "formula": "C7H14O2",
+      "canonical": "CCOC(=O)C(C)(C)C",
+      "spectrum_hash": "c65f98c27a3b1fc80a1218b7fef42b01ad54571808a01f214270372336c8ca81"
+    },
+    {
+      "cas": "39761-61-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/39761-61-0.pt",
+      "formula": "C8H16",
+      "canonical": "CC=CCC(C)(C)C",
+      "spectrum_hash": "770ff31d4bbaec0493839493640108c9892213767a80a74a1376046fdb1e6d6d"
+    },
+    {
+      "cas": "39761-64-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/39761-64-3.pt",
+      "formula": "C8H16",
+      "canonical": "CC=C(C)C(C)(C)C",
+      "spectrum_hash": "1a3c929a771c1f79b6d44e880b105f36c9b3858cc25ba1e8c5ee34a2262e5c61"
+    },
+    {
+      "cas": "3978-81-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/3978-81-2.pt",
+      "formula": "C9H13N",
+      "canonical": "CC(C)(C)c1ccncc1",
+      "spectrum_hash": "0014547a903cf46a0af87e28cb1557de355c1a99f479a59e86f40ef3c73ddb2e"
+    },
+    {
+      "cas": "4044-65-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4044-65-9.pt",
+      "formula": "C8H4N2S2",
+      "canonical": "S=C=Nc1ccc(N=C=S)cc1",
+      "spectrum_hash": "2ba7c63e4e3f6755662660f13e88dfcdd38582e57fda468147e2a8701d85d4a9"
+    },
+    {
+      "cas": "40635-66-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/40635-66-3.pt",
+      "formula": "C6H9ClO3",
+      "canonical": "CC(=O)OC(C)(C)C(=O)Cl",
+      "spectrum_hash": "ba13dbd92bf0f865bbe729180abef231db6622d62fe00119c90b193523ae5e01"
+    },
+    {
+      "cas": "40790-22-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/40790-22-5.pt",
+      "formula": "C9H14N2",
+      "canonical": "CC(C)CCc1cnccn1",
+      "spectrum_hash": "50d307cb9d994d4a33fc8995130ea89493ecaf4fb2e506b00e40b1c7e49cad35"
+    },
+    {
+      "cas": "4110-44-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4110-44-5.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCC(C)(C)CC",
+      "spectrum_hash": "85cc4d2deec93e9c74eeadcb77fe9685328dccc1a7f140a48806409089de3c00"
+    },
+    {
+      "cas": "4179-38-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4179-38-8.pt",
+      "formula": "C12H20O",
+      "canonical": "CCCCCCCCc1ccco1",
+      "spectrum_hash": "df868dd04b8ffc4c209284b30eb0c52834713f6a64bf850a7362b8a6d818e76c"
+    },
+    {
+      "cas": "4209-91-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4209-91-0.pt",
+      "formula": "C8H18O",
+      "canonical": "CCC(C)(O)CC(C)C",
+      "spectrum_hash": "83514a5295628011eda72ddc55bc33457fb6fe3acd258da789a7f2c44f2c09f1"
+    },
+    {
+      "cas": "4214-75-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4214-75-9.pt",
+      "formula": "C5H5N3O2",
+      "canonical": "Nc1ncccc1[N+](=O)[O-]",
+      "spectrum_hash": "344c778ed749265cdef1a6f4c390b5bbb86cf3ad6c91026e00e92006d5ee0819"
+    },
+    {
+      "cas": "4218-48-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4218-48-8.pt",
+      "formula": "C11H16",
+      "canonical": "CCc1ccc(C(C)C)cc1",
+      "spectrum_hash": "fbe291ff4a870edfa12cf5043ae5ef273076c4cc9d44e0f45fc268a7b352d014"
+    },
+    {
+      "cas": "422-05-9",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/422-05-9.pt",
+      "formula": "C3H3F5O",
+      "canonical": "OCC(F)(F)C(F)(F)F",
+      "spectrum_hash": "ff2726ac37b76df871a628a0abe515153bf80b6a2ef5b92dd457f35ed2ded506"
+    },
+    {
+      "cas": "4229-91-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4229-91-8.pt",
+      "formula": "C7H10O",
+      "canonical": "CCCc1ccco1",
+      "spectrum_hash": "982657962f86a5bbca91836f0708720886b44d8e67b7bb50eb60057d1d8212db"
+    },
+    {
+      "cas": "4230-97-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4230-97-1.pt",
+      "formula": "C11H20O2",
+      "canonical": "C=CCOC(=O)CCCCCCC",
+      "spectrum_hash": "1f4a1825636b62619f2697c12604cd533e81ddc45d62b20cd4ff11d329e0f866"
+    },
+    {
+      "cas": "4292-75-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4292-75-5.pt",
+      "formula": "C12H24",
+      "canonical": "CCCCCCC1CCCCC1",
+      "spectrum_hash": "c7aaeadfe83ede15960ace171d0fbdd85c978830becc5b66010c7b8f5e61de73"
+    },
+    {
+      "cas": "431-03-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/431-03-8.pt",
+      "formula": "C4H6O2",
+      "canonical": "CC(=O)C(C)=O",
+      "spectrum_hash": "9fc2fe9b591ae47f5eaf1b29d57ef7f77638a0bc94b3ec7e71393a95a9cf0ee2"
+    },
+    {
+      "cas": "4437-51-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4437-51-8.pt",
+      "formula": "C6H10O2",
+      "canonical": "CCC(=O)C(=O)CC",
+      "spectrum_hash": "d834c550007a5e92e0543b5def7c2e26c5a0c89eadcdcb6a540d358e3dc9a9d7"
+    },
+    {
+      "cas": "452-71-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/452-71-1.pt",
+      "formula": "C7H8FN",
+      "canonical": "Cc1cc(F)ccc1N",
+      "spectrum_hash": "b9ab3cc1a9f34f056db9bd7976d15dac011e5d3b2d9cb5ca5cb2d726ddc9b2e1"
+    },
+    {
+      "cas": "462-95-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/462-95-3.pt",
+      "formula": "C5H12O2",
+      "canonical": "CCOCOCC",
+      "spectrum_hash": "6d78c6cd72f456070f858bb2558199fd3aaa8a30aaa2acc77dd658e8ee7b315b"
+    },
+    {
+      "cas": "463-82-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/463-82-1.pt",
+      "formula": "C5H12",
+      "canonical": "CC(C)(C)C",
+      "spectrum_hash": "b88c12532e159a1890c2bbc0ad523b672aee328b40791d0e260644c79c6e0244"
+    },
+    {
+      "cas": "464-06-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/464-06-2.pt",
+      "formula": "C7H16",
+      "canonical": "CC(C)C(C)(C)C",
+      "spectrum_hash": "79ff5127368b3ce45a7d86597d347186afb5856b7b1132f13f53977fd76afa85"
+    },
+    {
+      "cas": "4663-22-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4663-22-3.pt",
+      "formula": "C6H10",
+      "canonical": "C=C(C)C1CC1",
+      "spectrum_hash": "f79034c1794f127f67dce286e151a33bdd419ca4be376670b85faf3a14633175"
+    },
+    {
+      "cas": "471-84-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/471-84-1.pt",
+      "formula": "C10H16",
+      "canonical": "C=C1CC2CCC1C2(C)C",
+      "spectrum_hash": "da2f2fcdc55f63044302b84495b9b77435f5293106d3266332fcc295886c80b8"
+    },
+    {
+      "cas": "4747-07-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4747-07-3.pt",
+      "formula": "C7H16O",
+      "canonical": "CCCCCCOC",
+      "spectrum_hash": "af956e3f4c7846c9f75e13b6c648f6957cda9e5ee75842eadbd2ab53b6829bf6"
+    },
+    {
+      "cas": "4894-62-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4894-62-6.pt",
+      "formula": "C8H14",
+      "canonical": "C=CC(C)CC=CC",
+      "spectrum_hash": "a24a8b3991843fa18c3a4635f47507205c77812ca16d89c3706660f604d4c572"
+    },
+    {
+      "cas": "4914-89-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4914-89-0.pt",
+      "formula": "C7H14",
+      "canonical": "CCC=C(C)CC",
+      "spectrum_hash": "459ecbeb247b45a142221940ee63ad2e6f997253fddb2bfbfb79a7eb1bac683a"
+    },
+    {
+      "cas": "4914-91-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4914-91-4.pt",
+      "formula": "C7H14",
+      "canonical": "CC=C(C)C(C)C",
+      "spectrum_hash": "c5c064d1b9fcba5ceeb41b9690394fa430374f63296d1ba4a7467ee29087a782"
+    },
+    {
+      "cas": "4920-99-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4920-99-4.pt",
+      "formula": "C11H16",
+      "canonical": "CCc1cccc(C(C)C)c1",
+      "spectrum_hash": "af28eeb8220f42adb0dab19f2f447d0b609fcaa0aa9f43a7909cd493e1f06bb1"
+    },
+    {
+      "cas": "4923-78-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/4923-78-8.pt",
+      "formula": "C9H18",
+      "canonical": "CCC1CCCCC1C",
+      "spectrum_hash": "b62572c50883e580e6c43566ea0a59610394bbb7090126723a76f6bd25f0c5d0"
+    },
+    {
+      "cas": "493-04-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/493-04-9.pt",
+      "formula": "C10H12",
+      "canonical": "C1=CCC2=C(C1)CC=CC2",
+      "spectrum_hash": "367e12186211bd2822c920ec98acb7daceb8d7f07bf21d1343019096c5311cbc"
+    },
+    {
+      "cas": "494-99-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/494-99-5.pt",
+      "formula": "C9H12O2",
+      "canonical": "COc1ccc(C)cc1OC",
+      "spectrum_hash": "168a2c680c85cc58fa7bba8c52d92e94eb07015cd05361f9565c2e4ee8e5d68c"
+    },
+    {
+      "cas": "496-11-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/496-11-7.pt",
+      "formula": "C9H10",
+      "canonical": "c1ccc2c(c1)CCC2",
+      "spectrum_hash": "b2f3df08454f50fa19086ae1441f95f6ce5c02a53ef12118737a189d4d4df6c9"
+    },
+    {
+      "cas": "496-14-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/496-14-0.pt",
+      "formula": "C8H8O",
+      "canonical": "c1ccc2c(c1)COC2",
+      "spectrum_hash": "e9eb2ccb98af7c0b2eb562baff3a6789c0662be910b430461d9d326d97e6811e"
+    },
+    {
+      "cas": "500-00-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/500-00-5.pt",
+      "formula": "C10H18",
+      "canonical": "CC1CC=C(C(C)C)CC1",
+      "spectrum_hash": "6eabc7117a1c9824357f12bcf441a05efc0c2fdf1fceb0fc1fc462a2194ec7db"
+    },
+    {
+      "cas": "501-53-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/501-53-1.pt",
+      "formula": "C8H7ClO2",
+      "canonical": "O=C(Cl)OCc1ccccc1",
+      "spectrum_hash": "a2f8349e22d4b9f170a1f7a5e88623cac7f8a104d47f5bb8f85440b8bcb645cc"
+    },
+    {
+      "cas": "503-17-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/503-17-3.pt",
+      "formula": "C4H6",
+      "canonical": "CC#CC",
+      "spectrum_hash": "834e9f0b786ec2d2aa9980324a52f1ae6b8df6875b036031595aa60074502b4c"
+    },
+    {
+      "cas": "503-30-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/503-30-0.pt",
+      "formula": "C3H6O",
+      "canonical": "C1COC1",
+      "spectrum_hash": "98625f687164f7d777b1c2e9c5893084b0d20b2435d384d08a5c3f52897bd71d"
+    },
+    {
+      "cas": "504-15-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/504-15-4.pt",
+      "formula": "C7H8O2",
+      "canonical": "Cc1cc(O)cc(O)c1",
+      "spectrum_hash": "0cee133c3c78489061f607240dfa8a8b02ed2fe9c67a8f90165a33583bfc04bd"
+    },
+    {
+      "cas": "504-29-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/504-29-0.pt",
+      "formula": "C5H6N2",
+      "canonical": "Nc1ccccn1",
+      "spectrum_hash": "033e3a37596903715f357f2690b866814e8b91a39487c263fd059f3586a3005f"
+    },
+    {
+      "cas": "505-22-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/505-22-6.pt",
+      "formula": "C4H8O2",
+      "canonical": "C1COCOC1",
+      "spectrum_hash": "56bd6c2490c8b8a3db49f30a11fd711d6fc197b5b96ab85d396bb9003c872138"
+    },
+    {
+      "cas": "508-32-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/508-32-7.pt",
+      "formula": "C10H16",
+      "canonical": "CC1(C)C2CC3C(C2)C31C",
+      "spectrum_hash": "713a71ad12c94c9fb22675c50e5840e2f2fe24bff4e600c4235e5c2e3c1b5b29"
+    },
+    {
+      "cas": "51-17-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/51-17-2.pt",
+      "formula": "C7H6N2",
+      "canonical": "c1ccc2[nH]cnc2c1",
+      "spectrum_hash": "9215c961835913a21eca4b4ecae05997ddbfe8ac8d9f188ee0ec07ab234d484e"
+    },
+    {
+      "cas": "512-56-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/512-56-1.pt",
+      "formula": "C3H9O4P",
+      "canonical": "COP(=O)(OC)OC",
+      "spectrum_hash": "1851169b8e2936c12052ad0ac3fa3402dd2420935d9ae6d38e3237abd52c85ae"
+    },
+    {
+      "cas": "513-37-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/513-37-1.pt",
+      "formula": "C4H7Cl",
+      "canonical": "CC(C)=CCl",
+      "spectrum_hash": "cb56a333e519d8a64fa673baa903a2e158b82a46573370bfcbccb28e9dece301"
+    },
+    {
+      "cas": "513-38-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/513-38-2.pt",
+      "formula": "C4H9I",
+      "canonical": "CC(C)CI",
+      "spectrum_hash": "ef0b595763588cd2c352d9932c2817c3e4459bcc49cce8db8e8530355ca17761"
+    },
+    {
+      "cas": "513-44-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/513-44-0.pt",
+      "formula": "C4H10S",
+      "canonical": "CC(C)CS",
+      "spectrum_hash": "f610f504d1bfe0e6f8af4cb19965461a3b32a4c429cf9fa88624b33490a1ea29"
+    },
+    {
+      "cas": "513-85-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/513-85-9.pt",
+      "formula": "C4H10O2",
+      "canonical": "CC(O)C(C)O",
+      "spectrum_hash": "23d093d1a226b131868cd0c2e733a5e5b4305839c935a5c08491f1d2d39a011e"
+    },
+    {
+      "cas": "517-22-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/517-22-6.pt",
+      "formula": "C8H13N",
+      "canonical": "CCc1c(C)c[nH]c1C",
+      "spectrum_hash": "40b09a9bc44d0275a4bd44d126a3c17704080636991621191fc60562cd59fd1c"
+    },
+    {
+      "cas": "5171-84-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5171-84-6.pt",
+      "formula": "C10H22",
+      "canonical": "CCC(C)(C)C(C)(C)CC",
+      "spectrum_hash": "683cc75532171ae86fa609cd169c96bbec01ac1949df8cce593c5d079a39c019"
+    },
+    {
+      "cas": "52-68-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/52-68-6.pt",
+      "formula": "C4H8Cl3O4P",
+      "canonical": "COP(=O)(OC)C(O)C(Cl)(Cl)Cl",
+      "spectrum_hash": "0034b56d2114f5018f5fc0c154bf57f081eae6ea2716b343b28c3d9eaf0905a0"
+    },
+    {
+      "cas": "52021-35-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/52021-35-9.pt",
+      "formula": "C7H12Br2",
+      "canonical": "BrC1CCCCCC1Br",
+      "spectrum_hash": "0e745aa52aabbd314cda779f9aed1bcb0982fb211bd8f5f72ffb0513fdb97809"
+    },
+    {
+      "cas": "52301-88-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/52301-88-9.pt",
+      "formula": "C7H6ClNO3",
+      "canonical": "O=[N+]([O-])c1ccc(CO)c(Cl)c1",
+      "spectrum_hash": "e89d06aba595a1a88b19cf96936e6262cfff3aaa919003cbcab3ef06768f155c"
+    },
+    {
+      "cas": "527-21-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/527-21-9.pt",
+      "formula": "C6F4O2",
+      "canonical": "O=C1C(F)=C(F)C(=O)C(F)=C1F",
+      "spectrum_hash": "73ecd408cb63dadc18e7aa031e063b92ae395d943838c7527301ce46ce1d7acb"
+    },
+    {
+      "cas": "528-29-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/528-29-0.pt",
+      "formula": "C6H4N2O4",
+      "canonical": "O=[N+]([O-])c1ccccc1[N+](=O)[O-]",
+      "spectrum_hash": "d3604ea0ddbd4c7d8ca751c2f454518c7a6167f922027d3d31bfc024bf02461e"
+    },
+    {
+      "cas": "530-55-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/530-55-2.pt",
+      "formula": "C8H8O4",
+      "canonical": "COC1=CC(=O)C=C(OC)C1=O",
+      "spectrum_hash": "0a316f9a963a023b7e918e155f48e7913b89a691e0a0801d66d48fe8fe90bab4"
+    },
+    {
+      "cas": "532-27-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/532-27-4.pt",
+      "formula": "C8H7ClO",
+      "canonical": "O=C(CCl)c1ccccc1",
+      "spectrum_hash": "1cfb305152b3df6076f9c813b9f99336870babe77ce95eed9dcba96dabe612fa"
+    },
+    {
+      "cas": "533-75-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/533-75-5.pt",
+      "formula": "C7H6O2",
+      "canonical": "O=c1cccccc1O",
+      "spectrum_hash": "c81c2aacd91cf44abbb2ee673a2e03d0f53f8d4ab7a21eb4237f5a1b0c271f11"
+    },
+    {
+      "cas": "5332-24-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5332-24-1.pt",
+      "formula": "C9H6BrN",
+      "canonical": "Brc1cnc2ccccc2c1",
+      "spectrum_hash": "84a1d0a9040d5073c6fdfaee648bf85fbbfad22acd7eacc8ff343a1086b6414e"
+    },
+    {
+      "cas": "5332-25-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/5332-25-2.pt",
+      "formula": "C9H6BrN",
+      "canonical": "Brc1ccc2ncccc2c1",
+      "spectrum_hash": "7e1d8f2170acd5dbbd831c9d5d6bb958a3db42d1ef9854cf03055eb7f53f6751"
+    },
+    {
+      "cas": "536-74-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/536-74-3.pt",
+      "formula": "C8H6",
+      "canonical": "C#Cc1ccccc1",
+      "spectrum_hash": "0d0bf418ee7a0fdd82e8796cbbb9f8c6bef8d8b4c6f3a5d622ce183fcb7c5afc"
+    },
+    {
+      "cas": "5367-26-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5367-26-0.pt",
+      "formula": "C7H6ClNO2",
+      "canonical": "Cc1cccc(Cl)c1[N+](=O)[O-]",
+      "spectrum_hash": "b937e1e5b56860222a1d8a1a2cba82b3f70894fde6601ab6e43e035a06b79688"
+    },
+    {
+      "cas": "540-88-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/540-88-5.pt",
+      "formula": "C6H12O2",
+      "canonical": "CC(=O)OC(C)(C)C",
+      "spectrum_hash": "2bce3f7e736aca3bf6762bc025e148822cd378fd7949fdf493d0af7880418dd8"
+    },
+    {
+      "cas": "5414-21-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5414-21-1.pt",
+      "formula": "C5H8BrN",
+      "canonical": "N#CCCCCBr",
+      "spectrum_hash": "59173779e71b25ce34a09899b8d30e3872deb3512eb33d7765ed28eac146248d"
+    },
+    {
+      "cas": "542-81-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/542-81-4.pt",
+      "formula": "C3H7ClS",
+      "canonical": "CSCCCl",
+      "spectrum_hash": "62ab7b3768927e3fb96d0bab2da0e64ef142c21143519e37873b520a97d87a01"
+    },
+    {
+      "cas": "544-25-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/544-25-2.pt",
+      "formula": "C7H8",
+      "canonical": "C1=CC=CCC=C1",
+      "spectrum_hash": "53a78c422161d3afa2bce3fb3fc218f429cc16582e81ec1fdb0af52088555289"
+    },
+    {
+      "cas": "55-18-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/55-18-5.pt",
+      "formula": "C4H10N2O",
+      "canonical": "CCN(CC)N=O",
+      "spectrum_hash": "799ea43e0e0fb28a8cad7dad76f212299c72d3573a588f0a21ccf654a2c26063"
+    },
+    {
+      "cas": "556-48-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/556-48-9.pt",
+      "formula": "C6H12O2",
+      "canonical": "OC1CCC(O)CC1",
+      "spectrum_hash": "3b7c8a19a6f3f41563659b509689f207bcd92f54017cfd30f5e01b1300291e94"
+    },
+    {
+      "cas": "556-61-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/556-61-6.pt",
+      "formula": "C2H3NS",
+      "canonical": "CN=C=S",
+      "spectrum_hash": "f1081c57fcc57d6f418845fe9851fbb5bfa502348e86d8c61d0dfc6479067b07"
+    },
+    {
+      "cas": "557-30-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/557-30-2.pt",
+      "formula": "C2H4N2O2",
+      "canonical": "ON=CC=NO",
+      "spectrum_hash": "614ad2796df3988090d97aab4a3e5dcbe5f119b09b2637c594e2aa8c74538b12"
+    },
+    {
+      "cas": "56-81-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/56-81-5.pt",
+      "formula": "C3H8O3",
+      "canonical": "OCC(O)CO",
+      "spectrum_hash": "fd3ee74b1a72b1e55ce2f89e55ed8eb721f531bfdba13aa9d4d7b470d7769fca"
+    },
+    {
+      "cas": "560-21-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/560-21-4.pt",
+      "formula": "C8H18",
+      "canonical": "CCC(C)(C)C(C)C",
+      "spectrum_hash": "781d83c595da6456f5417d570da7187a16a77a0ccba4d6122b628b712bdc2814"
+    },
+    {
+      "cas": "563-16-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/563-16-6.pt",
+      "formula": "C8H18",
+      "canonical": "CCCC(C)(C)CC",
+      "spectrum_hash": "ffe9559d6ae9fb943dfd92b0acdb7d30f53d096fca79afcb0014aecb40dc8eee"
+    },
+    {
+      "cas": "563-79-1",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/563-79-1.pt",
+      "formula": "C6H12",
+      "canonical": "CC(C)=C(C)C",
+      "spectrum_hash": "0711d460f055742e4ad5c85834080122985ebf69a304a5a85a89b909d0205341"
+    },
+    {
+      "cas": "564-02-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/564-02-3.pt",
+      "formula": "C8H18",
+      "canonical": "CCC(C)C(C)(C)C",
+      "spectrum_hash": "cfd3d9d09456764c49f9465c119c643c2a9948de91fb7d20177ad63e9f9b6ef4"
+    },
+    {
+      "cas": "565-59-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/565-59-3.pt",
+      "formula": "C7H16",
+      "canonical": "CCC(C)C(C)C",
+      "spectrum_hash": "a0a997c30be738888d39faf570461907548a5ef8e363faa3f47507d0673673e2"
+    },
+    {
+      "cas": "565-75-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/565-75-3.pt",
+      "formula": "C8H18",
+      "canonical": "CC(C)C(C)C(C)C",
+      "spectrum_hash": "fbf954102cc8c9a1344822be5214aabd499817ae8b15191c44146086b9c2575d"
+    },
+    {
+      "cas": "565-80-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/565-80-0.pt",
+      "formula": "C7H14O",
+      "canonical": "CC(C)C(=O)C(C)C",
+      "spectrum_hash": "e23fc34f52da96c06e16fe749a4309d9f33155b0cc8551b4bd2b512faf88ac49"
+    },
+    {
+      "cas": "57-44-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/57-44-3.pt",
+      "formula": "C8H12N2O3",
+      "canonical": "CCC1(CC)C(=O)NC(=O)NC1=O",
+      "spectrum_hash": "3420c95c7dcc44fc39e9fb6ca9fefaf32e76647b329b845866857b9b18cef756"
+    },
+    {
+      "cas": "576-15-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/576-15-8.pt",
+      "formula": "C10H9NO",
+      "canonical": "CC(=O)n1ccc2ccccc21",
+      "spectrum_hash": "a5dfe3ca27b93fb7735334f98dbbbff9b8451f08e047d437246100e47c2a7578"
+    },
+    {
+      "cas": "576-24-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/576-24-9.pt",
+      "formula": "C6H4Cl2O",
+      "canonical": "Oc1cccc(Cl)c1Cl",
+      "spectrum_hash": "7eb51146e0c6dbdec52713aa2bf6a36706bae06ffd8f19db86abacb472255721"
+    },
+    {
+      "cas": "578-66-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/578-66-5.pt",
+      "formula": "C9H8N2",
+      "canonical": "Nc1cccc2cccnc12",
+      "spectrum_hash": "a1569d29691b398092c7ae526cb19439d37263462922b310454a40272c36db0c"
+    },
+    {
+      "cas": "578-67-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/578-67-6.pt",
+      "formula": "C9H7NO",
+      "canonical": "Oc1cccc2ncccc12",
+      "spectrum_hash": "b16deee94b835c8b4d60d66a971f5c41456c63aa2226807d79fb6db0ada71df6"
+    },
+    {
+      "cas": "579-74-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/579-74-8.pt",
+      "formula": "C9H10O2",
+      "canonical": "COc1ccccc1C(C)=O",
+      "spectrum_hash": "42851a2eb10f0302c69354cb6aea34163978279d8ae52100bd080de5780631d1"
+    },
+    {
+      "cas": "58-55-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/58-55-9.pt",
+      "formula": "C7H8N4O2",
+      "canonical": "Cn1c(=O)c2[nH]cnc2n(C)c1=O",
+      "spectrum_hash": "32a324ff348fc0d54f24b08217994be2138ee213979f449ff44b8a777de03e96"
+    },
+    {
+      "cas": "58-89-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/58-89-9.pt",
+      "formula": "C6H6Cl6",
+      "canonical": "ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl",
+      "spectrum_hash": "b2a8d39ef07fd203929c802abc324e53677e2a9d7735e171cadae22698ac38e8"
+    },
+    {
+      "cas": "581-42-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/581-42-0.pt",
+      "formula": "C12H12",
+      "canonical": "Cc1ccc2cc(C)ccc2c1",
+      "spectrum_hash": "d3757725d95622c513a7b0f62b33037ac1421da46622e95641261c42f6d49bcf"
+    },
+    {
+      "cas": "582-24-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/582-24-1.pt",
+      "formula": "C8H8O2",
+      "canonical": "O=C(CO)c1ccccc1",
+      "spectrum_hash": "0d157d9a450ee647f1b26f19072323d6bdc5884e19895ac738fa7397e2fc6a58"
+    },
+    {
+      "cas": "583-48-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/583-48-2.pt",
+      "formula": "C8H18",
+      "canonical": "CCC(C)C(C)CC",
+      "spectrum_hash": "e7e85b67d7512525606c05ca667beb4ba803b652527162a9476ae18d2de798fc"
+    },
+    {
+      "cas": "583-55-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/583-55-1.pt",
+      "formula": "C6H4BrI",
+      "canonical": "Brc1ccccc1I",
+      "spectrum_hash": "efce06e6396d73547c8fec6eacbd55e639b89b36557a700fca7de02d1ab309e9"
+    },
+    {
+      "cas": "583-78-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/583-78-8.pt",
+      "formula": "C6H4Cl2O",
+      "canonical": "Oc1cc(Cl)ccc1Cl",
+      "spectrum_hash": "471d92f4099328bd2c5877197dbf0bec8c0951d9ac87293baaed25e744ceec0f"
+    },
+    {
+      "cas": "584-84-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/584-84-9.pt",
+      "formula": "C9H6N2O2",
+      "canonical": "Cc1ccc(N=C=O)cc1N=C=O",
+      "spectrum_hash": "3997fd0e5709d5e7cb9d0eb97516cebf1f3f695e5efa26125962164ad074a0e3"
+    },
+    {
+      "cas": "584-94-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/584-94-1.pt",
+      "formula": "C8H18",
+      "canonical": "CCCC(C)C(C)C",
+      "spectrum_hash": "7e2750b497bfaa3eb32701080e444367fb9d0ed0c1fef3d0c9a084c3d3cabca3"
+    },
+    {
+      "cas": "5857-36-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5857-36-3.pt",
+      "formula": "C8H16O",
+      "canonical": "CC(C)C(=O)C(C)(C)C",
+      "spectrum_hash": "ec192726a15644c1ebafe0db2e53a4cc19d3ad8b70e707877576c31e0d4c4a04"
+    },
+    {
+      "cas": "58593-78-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/58593-78-5.pt",
+      "formula": "C6H5ClS2",
+      "canonical": "Sc1ccc(Cl)c(S)c1",
+      "spectrum_hash": "15695d3e38bab2703d209845dd329318afd09d3e49919021fdacf1dcff9d86a9"
+    },
+    {
+      "cas": "5881-17-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5881-17-4.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCC(CC)CC",
+      "spectrum_hash": "be619bfacc065a8febadee574e08559107fa34c5d4694254ce8f5d7d05fb7484"
+    },
+    {
+      "cas": "589-34-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/589-34-4.pt",
+      "formula": "C7H16",
+      "canonical": "CCCC(C)CC",
+      "spectrum_hash": "e0ef3505eb09edb37f8ddcb5e901bbf0500c21c9d5916de46eab7625d3218ec5"
+    },
+    {
+      "cas": "589-40-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/589-40-2.pt",
+      "formula": "C5H10O2",
+      "canonical": "CCC(C)OC=O",
+      "spectrum_hash": "b543fb9b5d62e80a1056afe9c57870b14e37dfceaeab39173108083eb3cf4db3"
+    },
+    {
+      "cas": "589-53-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/589-53-7.pt",
+      "formula": "C8H18",
+      "canonical": "CCCC(C)CCC",
+      "spectrum_hash": "d5fb0ce5cfeee0c3db9f1c529503fe4cfbc1e905205129e6a8ab4a982ff2e2ea"
+    },
+    {
+      "cas": "589-81-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/589-81-1.pt",
+      "formula": "C8H18",
+      "canonical": "CCCCC(C)CC",
+      "spectrum_hash": "d944c219bdcc5649224fe8548e5ff7cf6fe0cf5477415e0ecade9b75dcc8a108"
+    },
+    {
+      "cas": "589-90-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/589-90-2.pt",
+      "formula": "C8H16",
+      "canonical": "CC1CCC(C)CC1",
+      "spectrum_hash": "f0f7146aba366d2464e29aef0334fca0bfddc04a333a75503ef1b9447e66f90e"
+    },
+    {
+      "cas": "589-92-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/589-92-4.pt",
+      "formula": "C7H12O",
+      "canonical": "CC1CCC(=O)CC1",
+      "spectrum_hash": "87b887309cfcdf20130ccdde2ce0d5749d6af58ae3ec0338b81cd3a988a93dd4"
+    },
+    {
+      "cas": "590-19-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/590-19-2.pt",
+      "formula": "C4H6",
+      "canonical": "C=C=CC",
+      "spectrum_hash": "1c571f1b932c6c3abc05533de984315905ba182f01a078b83737d283359ac9c2"
+    },
+    {
+      "cas": "590-35-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/590-35-2.pt",
+      "formula": "C7H16",
+      "canonical": "CCCC(C)(C)C",
+      "spectrum_hash": "187104e7b257ad8eeed63c54c659f07b875778b9b0809ee0234cd59c29182c6a"
+    },
+    {
+      "cas": "591-27-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/591-27-5.pt",
+      "formula": "C6H7NO",
+      "canonical": "Nc1cccc(O)c1",
+      "spectrum_hash": "521eca8739dc4204080a0e0e45805ac2ab4a778e8e17ed89a48af8153ec6b603"
+    },
+    {
+      "cas": "591-93-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/591-93-5.pt",
+      "formula": "C5H8",
+      "canonical": "C=CCC=C",
+      "spectrum_hash": "ce8f69cd1a8118d96b2fa2afef66ba16db1f0ba36716b03e759f4ed41739cedd"
+    },
+    {
+      "cas": "591-95-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/591-95-7.pt",
+      "formula": "C5H8",
+      "canonical": "C=C=CCC",
+      "spectrum_hash": "4dd92ea79c998d941624bc86e8ce5b574299badfb033c1e2bfa18d0b1a2c6d59"
+    },
+    {
+      "cas": "5910-89-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5910-89-4.pt",
+      "formula": "C6H8N2",
+      "canonical": "Cc1nccnc1C",
+      "spectrum_hash": "a7c365b5c001cb89cd9a572500581b6308add9e59d473612ecda31f31fb4d817"
+    },
+    {
+      "cas": "5911-04-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/5911-04-6.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCCC(C)CC",
+      "spectrum_hash": "5a778b5f27d59c3e9fa1f24b05699f3124a27208d0be78aa26f6cf924eac431d"
+    },
+    {
+      "cas": "592-13-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-13-2.pt",
+      "formula": "C8H18",
+      "canonical": "CC(C)CCC(C)C",
+      "spectrum_hash": "8c650a285b3f79e854c8ba902f32cb4e71bec71d3f6c74c9bdc377a6470f6b69"
+    },
+    {
+      "cas": "592-27-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-27-8.pt",
+      "formula": "C8H18",
+      "canonical": "CCCCCC(C)C",
+      "spectrum_hash": "290b8b222331253bc27eca4b99a4f3afcbd496d142332fb62d6f5660d92aee1f"
+    },
+    {
+      "cas": "592-41-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-41-6.pt",
+      "formula": "C6H12",
+      "canonical": "C=CCCCC",
+      "spectrum_hash": "68f944e6a7b183e495e72855bb23ada99f46234166c6ff1cd84c1262727f0561"
+    },
+    {
+      "cas": "592-42-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-42-7.pt",
+      "formula": "C6H10",
+      "canonical": "C=CCCC=C",
+      "spectrum_hash": "041f63adbef32a184491c6863f52bac629b32dc6e41ebf4c266ed5be6a83c628"
+    },
+    {
+      "cas": "592-57-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-57-4.pt",
+      "formula": "C6H8",
+      "canonical": "C1=CCCC=C1",
+      "spectrum_hash": "1870a48c261a12124ff232611c6f1ab176e93d29b471861af665d3162e1bb7bb"
+    },
+    {
+      "cas": "592-77-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-77-8.pt",
+      "formula": "C7H14",
+      "canonical": "CC=CCCCC",
+      "spectrum_hash": "522272a3687cc53839378c977563cae1b4210a1697f918e8077ae962744a4797"
+    },
+    {
+      "cas": "592-90-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/592-90-5.pt",
+      "formula": "C6H12O",
+      "canonical": "C1CCCOCC1",
+      "spectrum_hash": "51acb9bbe67d83880b93b8e17f2d2538804cb339afd1c2795cd99cefded697d1"
+    },
+    {
+      "cas": "593-66-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/593-66-8.pt",
+      "formula": "C2H3I",
+      "canonical": "C=CI",
+      "spectrum_hash": "ae1a31254a8220f34c296c9c747b4e1587da45846814cd9caca96c534361f8ce"
+    },
+    {
+      "cas": "594-56-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/594-56-9.pt",
+      "formula": "C7H14",
+      "canonical": "C=C(C)C(C)(C)C",
+      "spectrum_hash": "0e07bcc402b338a5d4be7447bc1198c6f881014e2996db87e8a0e08845f221aa"
+    },
+    {
+      "cas": "594-82-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/594-82-1.pt",
+      "formula": "C8H18",
+      "canonical": "CC(C)(C)C(C)(C)C",
+      "spectrum_hash": "5fbf9b1078df565d3084b1d69bbce26639eb070a8c3b4265d1540c5962cb4ed5"
+    },
+    {
+      "cas": "598-02-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/598-02-7.pt",
+      "formula": "C4H11O4P",
+      "canonical": "CCOP(=O)(O)OCC",
+      "spectrum_hash": "2c6f904e7e748d21bebc2df7faa91ffb711a3d550926390832619413a5c45f05"
+    },
+    {
+      "cas": "598-25-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/598-25-4.pt",
+      "formula": "C5H8",
+      "canonical": "C=C=C(C)C",
+      "spectrum_hash": "f408f41b6e5f1cd58b3eed4fb4d8669c4e455098bad042bfb20f649c9042a075"
+    },
+    {
+      "cas": "598-77-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/598-77-6.pt",
+      "formula": "C3H5Cl3",
+      "canonical": "CC(Cl)C(Cl)Cl",
+      "spectrum_hash": "eb453755d79ecacd872c97bd5cc65716edc70d684571e9e46c8060f6ac3ccb67"
+    },
+    {
+      "cas": "600-25-9",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/600-25-9.pt",
+      "formula": "C3H6ClNO2",
+      "canonical": "CCC(Cl)[N+](=O)[O-]",
+      "spectrum_hash": "bbbde9d08bd0c0a46986b7114e55dcaf2c5607bea799dd908a1e22d27ff73741"
+    },
+    {
+      "cas": "603-76-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/603-76-9.pt",
+      "formula": "C9H9N",
+      "canonical": "Cn1ccc2ccccc21",
+      "spectrum_hash": "42c422ebf6e409f78785cd986699e9f2e628fe38d5047b5d0a0f89c50703ccb6"
+    },
+    {
+      "cas": "608-27-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/608-27-5.pt",
+      "formula": "C6H5Cl2N",
+      "canonical": "Nc1cccc(Cl)c1Cl",
+      "spectrum_hash": "a94a745c4801a62bb8a78cbd644d5739563b599fcfe04b6e13b6228b2ed63f3d"
+    },
+    {
+      "cas": "609-19-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/609-19-8.pt",
+      "formula": "C6H3Cl3O",
+      "canonical": "Oc1cc(Cl)c(Cl)c(Cl)c1",
+      "spectrum_hash": "8c7a324db1ba8157102ce4a0faf799d537a5460f065a16861b0fc23eb6ae0a53"
+    },
+    {
+      "cas": "609-26-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/609-26-7.pt",
+      "formula": "C8H18",
+      "canonical": "CCC(CC)C(C)C",
+      "spectrum_hash": "81a9c9fd331a2130768eec5f0e09e88e1c58bdf5abcb266063f43950ef21242a"
+    },
+    {
+      "cas": "611-15-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/611-15-4.pt",
+      "formula": "C9H10",
+      "canonical": "C=Cc1ccccc1C",
+      "spectrum_hash": "409ad38a1c91bc11945c82232d7de019e889422ba8f6fb56692e6cf5f693bdfa"
+    },
+    {
+      "cas": "611-20-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/611-20-1.pt",
+      "formula": "C7H5NO",
+      "canonical": "N#Cc1ccccc1O",
+      "spectrum_hash": "3f9fd1aef91af7e5a49e631fc76e00363b6b7461a4326c1c55a1043ae64a8e4c"
+    },
+    {
+      "cas": "611-35-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/611-35-8.pt",
+      "formula": "C9H6ClN",
+      "canonical": "Clc1ccnc2ccccc12",
+      "spectrum_hash": "5aac506ff9be236e323fa7c507b49083a8cb7acd80172e074aa50fe592efbf5a"
+    },
+    {
+      "cas": "611-36-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/611-36-9.pt",
+      "formula": "C9H7NO",
+      "canonical": "Oc1ccnc2ccccc12",
+      "spectrum_hash": "c4a16c87e7da5c375e18966502ae001600b48732f09f509da99fe8ae931a087e"
+    },
+    {
+      "cas": "612-25-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/612-25-9.pt",
+      "formula": "C7H7NO3",
+      "canonical": "O=[N+]([O-])c1ccccc1CO",
+      "spectrum_hash": "eae2d201729aceee573a4f2dee08d97d6134da6e4b0507b7f901b62803292706"
+    },
+    {
+      "cas": "615-36-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/615-36-1.pt",
+      "formula": "C6H6BrN",
+      "canonical": "Nc1ccccc1Br",
+      "spectrum_hash": "fa8f2b2df54cfe2763866255b70efff3dcdf73af08c6342609f55355357a67ec"
+    },
+    {
+      "cas": "615-58-7",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/615-58-7.pt",
+      "formula": "C6H4Br2O",
+      "canonical": "Oc1ccc(Br)cc1Br",
+      "spectrum_hash": "596b9cdbbaaa529235ecc3717d3f2a2aaf4a10ee7a739ffb96305b8e31159ee8"
+    },
+    {
+      "cas": "616-12-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/616-12-6.pt",
+      "formula": "C6H12",
+      "canonical": "CC=C(C)CC",
+      "spectrum_hash": "bc574f07f13c0d04f907dc3633b5d0e0f3b66bdce71cc65941de147481e13749"
+    },
+    {
+      "cas": "616-25-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/616-25-1.pt",
+      "formula": "C5H10O",
+      "canonical": "C=CC(O)CC",
+      "spectrum_hash": "fd86d1ba49576fdc1e1825b352ff2d38dfe8a818d79f008fd307e6032f9cf70c"
+    },
+    {
+      "cas": "6175-49-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6175-49-1.pt",
+      "formula": "C12H24O",
+      "canonical": "CCCCCCCCCCC(C)=O",
+      "spectrum_hash": "566b233b3e4f93d6e3f7f710831a4f67a7847d91c6b58786be3c477ea2948974"
+    },
+    {
+      "cas": "619-99-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/619-99-8.pt",
+      "formula": "C8H18",
+      "canonical": "CCCC(CC)CC",
+      "spectrum_hash": "c89309d225c2c3788d6d3cece8d8532d6cf1529660b5102e4d50033d4994239d"
+    },
+    {
+      "cas": "62-73-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/62-73-7.pt",
+      "formula": "C4H7Cl2O4P",
+      "canonical": "COP(=O)(OC)OC=C(Cl)Cl",
+      "spectrum_hash": "0413f959d710b7f476df66a90291974d90b831d6c8fbf27571b01c2a0f623fb5"
+    },
+    {
+      "cas": "621-23-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/621-23-8.pt",
+      "formula": "C9H12O3",
+      "canonical": "COc1cc(OC)cc(OC)c1",
+      "spectrum_hash": "a0ba7c4d93b03a230fa69fff0833a57535a322431b77e029f7f9a4b9c87b8030"
+    },
+    {
+      "cas": "621-59-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/621-59-0.pt",
+      "formula": "C8H8O3",
+      "canonical": "COc1ccc(C=O)cc1O",
+      "spectrum_hash": "0ac29d61ea372594f2e61da1f1580948a9e926789b537467c0b836e42b9dca4e"
+    },
+    {
+      "cas": "622-86-6",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/622-86-6.pt",
+      "formula": "C8H9ClO",
+      "canonical": "ClCCOc1ccccc1",
+      "spectrum_hash": "19a2f8c2e55d6338b8edcdec37f20d9fe1e2dd017b01274925b77bd9d1333e8a"
+    },
+    {
+      "cas": "622-97-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/622-97-9.pt",
+      "formula": "C9H10",
+      "canonical": "C=Cc1ccc(C)cc1",
+      "spectrum_hash": "0956fa1cb38c2855e67770d85705af21d5e9d83622d69fcaf2f215f92ac9c284"
+    },
+    {
+      "cas": "6225-06-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6225-06-5.pt",
+      "formula": "C7H15NO",
+      "canonical": "CCCCC(=O)N(C)C",
+      "spectrum_hash": "c65a143a0946fca02eed8984d3829e4a6bb68df3042790d88ce0b333d230d8b8"
+    },
+    {
+      "cas": "623-05-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/623-05-2.pt",
+      "formula": "C7H8O2",
+      "canonical": "OCc1ccc(O)cc1",
+      "spectrum_hash": "3d7771b53257be46721c8799bd1b19676b7a9b6a6af69a51ff9cb9801f9e55bc"
+    },
+    {
+      "cas": "623-40-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/623-40-5.pt",
+      "formula": "C5H11NO",
+      "canonical": "CCCC(C)=NO",
+      "spectrum_hash": "40cdcfa2589d132432e952cabdb67af96af56b399548d1c8cbf5ddd02f45d61c"
+    },
+    {
+      "cas": "623-71-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/623-71-2.pt",
+      "formula": "C5H9ClO2",
+      "canonical": "CCOC(=O)CCCl",
+      "spectrum_hash": "01611af4074bca872d31c36796a7855bf9a5fb7b741379a354b091d34ad7678f"
+    },
+    {
+      "cas": "6236-88-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6236-88-0.pt",
+      "formula": "C9H18",
+      "canonical": "CCC1CCC(C)CC1",
+      "spectrum_hash": "91fc5fd9fb37b33e06018cdd4cd6a09e877f1c1841d9039346c7a413ba765674"
+    },
+    {
+      "cas": "624-44-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/624-44-2.pt",
+      "formula": "C7H15NO",
+      "canonical": "CC(CCC(C)C)=NO",
+      "spectrum_hash": "b5df2a983d5fd20fdc2c50ad23364c80a410eca6f65c3f9d0b5094313b65c11a"
+    },
+    {
+      "cas": "624-48-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/624-48-6.pt",
+      "formula": "C6H8O4",
+      "canonical": "COC(=O)C=CC(=O)OC",
+      "spectrum_hash": "e9c683cce645012a9cd566af9493c8450c7913c918f2c5cfd05e34fa436c225f"
+    },
+    {
+      "cas": "624-83-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/624-83-9.pt",
+      "formula": "C2H3NO",
+      "canonical": "CN=C=O",
+      "spectrum_hash": "7196aae7acd17b196b679cb58b4284ca5198feb55fe7bdff45436e3e0f721663"
+    },
+    {
+      "cas": "625-06-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/625-06-9.pt",
+      "formula": "C7H16O",
+      "canonical": "CC(C)CC(C)(C)O",
+      "spectrum_hash": "40d4b007b35d0a13f95f6e6023ce1c82f4a764b2d7dad41f4bae3e8504ad8d3f"
+    },
+    {
+      "cas": "625-69-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/625-69-4.pt",
+      "formula": "C5H12O2",
+      "canonical": "CC(O)CC(C)O",
+      "spectrum_hash": "28f5cc75e395a5dc193e488760842d9388eae761bc7b7492d18c423f1334020d"
+    },
+    {
+      "cas": "626-19-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/626-19-7.pt",
+      "formula": "C8H6O2",
+      "canonical": "O=Cc1cccc(C=O)c1",
+      "spectrum_hash": "1f186a9a1ba90c8aae6205ad4c12ca0aeb0a1500a2b41b7030eacd53a9c06b98"
+    },
+    {
+      "cas": "6262-87-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6262-87-9.pt",
+      "formula": "C9H12S",
+      "canonical": "CC(C)c1ccccc1S",
+      "spectrum_hash": "8d77d06bcac845310e0b73cd2c10e9d03cc130d00096dea1385a92e87e82001f"
+    },
+    {
+      "cas": "627-02-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/627-02-1.pt",
+      "formula": "C6H14O",
+      "canonical": "CCOCC(C)C",
+      "spectrum_hash": "0ae2f26cbba7c79271bbf657c4919fa11aa2f22f7f810c1e83f872fd8996caad"
+    },
+    {
+      "cas": "627-21-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/627-21-4.pt",
+      "formula": "C5H8",
+      "canonical": "CC#CCC",
+      "spectrum_hash": "ae1ba977cec2b029c35a71b3cb5dcbe0931587a571c3fd5a528ba7c5bdf3afbe"
+    },
+    {
+      "cas": "627-31-6",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/627-31-6.pt",
+      "formula": "C3H6I2",
+      "canonical": "ICCCI",
+      "spectrum_hash": "c42efb7c4ceb70a8edaa9015c5b6eaf3b39ee0d963483ae4f6521e18def2a2dc"
+    },
+    {
+      "cas": "628-16-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/628-16-0.pt",
+      "formula": "C6H6",
+      "canonical": "C#CCCC#C",
+      "spectrum_hash": "11b3855096a46122167e4b781cd7eff16bc72503c2da3c295bcfdcb26734f684"
+    },
+    {
+      "cas": "628-41-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/628-41-1.pt",
+      "formula": "C6H8",
+      "canonical": "C1=CCC=CC1",
+      "spectrum_hash": "84cb92a47f2efba80257fd6f881974a18f47a9703d32661b343c1f1d878a4101"
+    },
+    {
+      "cas": "628-81-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/628-81-9.pt",
+      "formula": "C6H14O",
+      "canonical": "CCCCOCC",
+      "spectrum_hash": "3deadfac62ca14b3d9845f326298a69d90f5eb600a37ef1b877faae8f84d3c95"
+    },
+    {
+      "cas": "629-19-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/629-19-6.pt",
+      "formula": "C6H14S2",
+      "canonical": "CCCSSCCC",
+      "spectrum_hash": "a18b127d850bcea13ea2ff1917c7be1ae008d5d2961f00aae7018d4000a2e726"
+    },
+    {
+      "cas": "629-20-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/629-20-9.pt",
+      "formula": "C8H8",
+      "canonical": "C1=CC=CC=CC=C1",
+      "spectrum_hash": "c9092795c1ea67aea0e8a631cf2a1a7c693214e15710b58c0c774cef15bb39f6"
+    },
+    {
+      "cas": "629-45-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/629-45-8.pt",
+      "formula": "C8H18S2",
+      "canonical": "CCCCSSCCCC",
+      "spectrum_hash": "6284139daf61124d0cd3632ec1afbf7565c3c78468d8836345e75380ceef55c5"
+    },
+    {
+      "cas": "6294-31-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6294-31-1.pt",
+      "formula": "C12H26S",
+      "canonical": "CCCCCCSCCCCCC",
+      "spectrum_hash": "17bf6d0ff27f41ea047b2140243e8c216948040eb0cf7c084082a3592730d1ac"
+    },
+    {
+      "cas": "630-18-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/630-18-2.pt",
+      "formula": "C5H9N",
+      "canonical": "CC(C)(C)C#N",
+      "spectrum_hash": "7fb1e8b02ca3611d1effff5b5295c326f4be5581d07a227190810d8d0a1e32f1"
+    },
+    {
+      "cas": "630-20-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/630-20-6.pt",
+      "formula": "C2H2Cl4",
+      "canonical": "ClCC(Cl)(Cl)Cl",
+      "spectrum_hash": "2e2ba27552dea1c03f5b7cf9a367c00e90c16732c785090b0de554e2c52a807d"
+    },
+    {
+      "cas": "632-21-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/632-21-3.pt",
+      "formula": "C3H2Cl4O",
+      "canonical": "O=C(C(Cl)Cl)C(Cl)Cl",
+      "spectrum_hash": "105d4bb55a62e62b5eaa827beebf6029bf733cb32603ebf59aee464947f8184e"
+    },
+    {
+      "cas": "634-83-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/634-83-3.pt",
+      "formula": "C6H3Cl4N",
+      "canonical": "Nc1cc(Cl)c(Cl)c(Cl)c1Cl",
+      "spectrum_hash": "5be2a0260bddd5621dfd4f94f3417197c4cf9c626e7b83bbc96d773912002a46"
+    },
+    {
+      "cas": "634-93-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/634-93-5.pt",
+      "formula": "C6H4Cl3N",
+      "canonical": "Nc1c(Cl)cc(Cl)cc1Cl",
+      "spectrum_hash": "29ffa8130d3ff33d3c0db09c2da18ada9d2f46db90c264547aa2b0ebc41e4636"
+    },
+    {
+      "cas": "636-28-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/636-28-2.pt",
+      "formula": "C6H2Br4",
+      "canonical": "Brc1cc(Br)c(Br)cc1Br",
+      "spectrum_hash": "d3a5e6be794a9027172c3936863f4265186b3b70935d4c5a8929686f152a9a22"
+    },
+    {
+      "cas": "637-92-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/637-92-3.pt",
+      "formula": "C6H14O",
+      "canonical": "CCOC(C)(C)C",
+      "spectrum_hash": "ebd324edfaecce50150dac1ab66d8c42c149a3710cc03b72db8ac407642c335a"
+    },
+    {
+      "cas": "638-02-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/638-02-8.pt",
+      "formula": "C6H8S",
+      "canonical": "Cc1ccc(C)s1",
+      "spectrum_hash": "8140d09fd79fe275a72d88df6e58b90dee954bfac5d99ee5c955485d539ca7e2"
+    },
+    {
+      "cas": "638-49-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/638-49-3.pt",
+      "formula": "C6H12O2",
+      "canonical": "CCCCCOC=O",
+      "spectrum_hash": "9ceb7cdab65fdf232a93f18b84d1a4f8c99e92e78aa9333816a3c537d3e93196"
+    },
+    {
+      "cas": "6415-12-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/6415-12-9.pt",
+      "formula": "C4H12N2",
+      "canonical": "CN(C)N(C)C",
+      "spectrum_hash": "a79057d9eb909de177a35fe5c84794662c205a23770960dc9840ccba37423c82"
+    },
+    {
+      "cas": "643-58-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/643-58-3.pt",
+      "formula": "C13H12",
+      "canonical": "Cc1ccccc1-c1ccccc1",
+      "spectrum_hash": "4d0736b93722f87acd16e6600df4d4cefc2762cae0c67f21db430a765c7b1608"
+    },
+    {
+      "cas": "645-59-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/645-59-0.pt",
+      "formula": "C9H9N",
+      "canonical": "N#CCCc1ccccc1",
+      "spectrum_hash": "0b58a4b15bd2bdac8782f9daaebc0585d0a1eed40f763697f91fc305be4ca8d4"
+    },
+    {
+      "cas": "661-97-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/661-97-2.pt",
+      "formula": "C3Cl2F6",
+      "canonical": "FC(F)(F)C(F)(Cl)C(F)(F)Cl",
+      "spectrum_hash": "65a2e426adf0ea6f40b13f15423127a7e288d61173ca2138c426478a78cdcc88"
+    },
+    {
+      "cas": "684-16-2",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/684-16-2.pt",
+      "formula": "C3F6O",
+      "canonical": "O=C(C(F)(F)F)C(F)(F)F",
+      "spectrum_hash": "c8ed3fbc53096b65ef306e671b24ef2c44a2f0de3dca21b6285f31f858b52e28"
+    },
+    {
+      "cas": "689-12-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/689-12-3.pt",
+      "formula": "C6H10O2",
+      "canonical": "C=CC(=O)OC(C)C",
+      "spectrum_hash": "6cf8a39bb9444f91fb7b4a52ae22998bfc442a129018260b6f60ef4b9bffe81b"
+    },
+    {
+      "cas": "690-93-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/690-93-7.pt",
+      "formula": "C8H16",
+      "canonical": "CCC=CC(C)(C)C",
+      "spectrum_hash": "59ac877454254a8122e0b082285418d2e0af7ee4afb061514f379e323d32ef56"
+    },
+    {
+      "cas": "692-96-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/692-96-6.pt",
+      "formula": "C8H16",
+      "canonical": "CCCC=CC(C)C",
+      "spectrum_hash": "f999f373568d3e9b31a64e2978adea7c12cdbaa9b3992806ff4c43adc36ada9a"
+    },
+    {
+      "cas": "693-89-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/693-89-0.pt",
+      "formula": "C6H10",
+      "canonical": "CC1=CCCC1",
+      "spectrum_hash": "a4261182a18ca57e46180b1d9c23fb1b94a23a9f4aaf109b2b59b6904e36b57d"
+    },
+    {
+      "cas": "694-35-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/694-35-9.pt",
+      "formula": "C7H12",
+      "canonical": "CCC1C=CCC1",
+      "spectrum_hash": "20542f8b937f48436ff701b47a2571b60e997cb7a94640903bb78fd2d0fcf1e9"
+    },
+    {
+      "cas": "696-29-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/696-29-7.pt",
+      "formula": "C9H18",
+      "canonical": "CC(C)C1CCCCC1",
+      "spectrum_hash": "244d0b25f5657a90530d5c402dcd590786bb716c057f6619838c9ad2daf3a5c9"
+    },
+    {
+      "cas": "696-62-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/696-62-8.pt",
+      "formula": "C7H7IO",
+      "canonical": "COc1ccc(I)cc1",
+      "spectrum_hash": "376e702b682d7411384e53440e1f71e9734efee42ec0d913f8eee5c87a041bed"
+    },
+    {
+      "cas": "700-12-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/700-12-9.pt",
+      "formula": "C11H16",
+      "canonical": "Cc1cc(C)c(C)c(C)c1C",
+      "spectrum_hash": "669bb73b71611f5fb3f8054a9db5f0847b6fdd6a2e2647f5b3d8931f7a54c34c"
+    },
+    {
+      "cas": "700-17-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/700-17-4.pt",
+      "formula": "C6H3F4N",
+      "canonical": "Nc1c(F)c(F)cc(F)c1F",
+      "spectrum_hash": "cced50593882fb6e8d930e74a77ad2dd8bc72e37e5db328442fc291eaeea2e39"
+    },
+    {
+      "cas": "700-38-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/700-38-9.pt",
+      "formula": "C7H7NO3",
+      "canonical": "Cc1ccc([N+](=O)[O-])c(O)c1",
+      "spectrum_hash": "a8b050f0dda06d206b0ad17547b56a00767f82d8bf7acb7e99b252f4182ca826"
+    },
+    {
+      "cas": "70288-99-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/70288-99-2.pt",
+      "formula": "C10H20N2",
+      "canonical": "CCCN(CCC)CCCC#N",
+      "spectrum_hash": "f874050373b2ba71179675f716254df3e730f6d75e84b42d0ec783b465cca7b4"
+    },
+    {
+      "cas": "706-78-5",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/706-78-5.pt",
+      "formula": "C5Cl8",
+      "canonical": "ClC1=C(Cl)C(Cl)(Cl)C(Cl)(Cl)C1(Cl)Cl",
+      "spectrum_hash": "74f53a514faeee0357ef6d7089af92efe88ed632f07911f59b69160a10d6105d"
+    },
+    {
+      "cas": "7146-60-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7146-60-3.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCC(C)C(C)C",
+      "spectrum_hash": "164a5fa622147db3e2a46d8b4d4860f09008625e80985ac4a7f8c70dcf784b2f"
+    },
+    {
+      "cas": "7154-66-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7154-66-7.pt",
+      "formula": "C7H4BrClO",
+      "canonical": "O=C(Cl)c1ccccc1Br",
+      "spectrum_hash": "77f4e473ee7a6df7e89e4d42895a68343ffda0a585b8482f8e08802a63b00d47"
+    },
+    {
+      "cas": "7154-75-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7154-75-8.pt",
+      "formula": "C6H10",
+      "canonical": "C#CCC(C)C",
+      "spectrum_hash": "2b46104de771e7dd025f6ed29763b50bfd0d1e75dce1f4bf7e0a86287492644c"
+    },
+    {
+      "cas": "7154-79-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7154-79-2.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)(C)C(C)(C)C",
+      "spectrum_hash": "cc561ff99763c2d85539a20e4ecf3bdd6a998d5a5c85c47598af43691d406af7"
+    },
+    {
+      "cas": "7154-80-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7154-80-5.pt",
+      "formula": "C10H22",
+      "canonical": "CCC(C)CC(C)(C)CC",
+      "spectrum_hash": "228047d0752de68e26ef4ee53e31047e5e59e3b95ff0a1d35fe17bbce9bc1cbe"
+    },
+    {
+      "cas": "7239-23-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7239-23-8.pt",
+      "formula": "C12H24",
+      "canonical": "CCC=CCCCCCCCC",
+      "spectrum_hash": "982bc9a97a0c8ed53a824f6902cf0704b48ce8946b325632708ca9b7f40f3049"
+    },
+    {
+      "cas": "7283-96-7",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/7283-96-7.pt",
+      "formula": "C5H3ClOS",
+      "canonical": "O=Cc1ccc(Cl)s1",
+      "spectrum_hash": "6963827aefb3519f2edd06f16f2d16c616ada49a0b1d377cb659e1331dd924ef"
+    },
+    {
+      "cas": "7385-82-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7385-82-2.pt",
+      "formula": "C7H14",
+      "canonical": "CC=CCC(C)C",
+      "spectrum_hash": "97854c68266e103c7fa3f50a3c670fe82f7d0ad3f86d814a296b6f678357b65b"
+    },
+    {
+      "cas": "74-85-1",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/74-85-1.pt",
+      "formula": "C2H4",
+      "canonical": "C=C",
+      "spectrum_hash": "923710b2bc10335998331a4033a85ef12b7cd711c5f18318c615560e7088fc91"
+    },
+    {
+      "cas": "74-87-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/74-87-3.pt",
+      "formula": "CH3Cl",
+      "canonical": "CCl",
+      "spectrum_hash": "8a7f64be3e7c7b18b67735683c51229cf258e80e1ed5d525dbf94b4879f8c5dc"
+    },
+    {
+      "cas": "75-03-6",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/75-03-6.pt",
+      "formula": "C2H5I",
+      "canonical": "CCI",
+      "spectrum_hash": "e28554e14d6a91c0b48dfc3e41e26e4a025e9a6b6de7ad181b9f9d97ef01d40f"
+    },
+    {
+      "cas": "75-11-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-11-6.pt",
+      "formula": "CH2I2",
+      "canonical": "ICI",
+      "spectrum_hash": "1ab71148cb1ac4f0d235c5b0e2dae94df5c9dfde8074da0057f0f686bb24399c"
+    },
+    {
+      "cas": "75-33-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-33-2.pt",
+      "formula": "C3H8S",
+      "canonical": "CC(C)S",
+      "spectrum_hash": "589c7db57394328fe153096230e32d859638064cc58584a6faadf27e777033ec"
+    },
+    {
+      "cas": "75-52-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-52-5.pt",
+      "formula": "CH3NO2",
+      "canonical": "C[N+](=O)[O-]",
+      "spectrum_hash": "7706c8bb008974c80603736e1db5b1e31853e72c85259c88f6bd97c2166453b1"
+    },
+    {
+      "cas": "75-64-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-64-9.pt",
+      "formula": "C4H11N",
+      "canonical": "CC(C)(C)N",
+      "spectrum_hash": "8c682acc5844d7cde94ac3f64baa6e2d6fd0094a11545131a612f9769659d8dd"
+    },
+    {
+      "cas": "75-66-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-66-1.pt",
+      "formula": "C4H10S",
+      "canonical": "CC(C)(C)S",
+      "spectrum_hash": "6208f0005856ba46890f5089c186f65902ed65da7226d8e5fd1ec10cf3f20af7"
+    },
+    {
+      "cas": "75-99-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/75-99-0.pt",
+      "formula": "C3H4Cl2O2",
+      "canonical": "CC(Cl)(Cl)C(=O)O",
+      "spectrum_hash": "6eb56d6011e75fdeab048e4b1779500608d4ed65ac2a2d17f9b91866d8e24bdf"
+    },
+    {
+      "cas": "758-16-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/758-16-7.pt",
+      "formula": "C3H7NS",
+      "canonical": "CN(C)C=S",
+      "spectrum_hash": "45d9c827e764729144284618f306b4d4a28dd76fdb340c91b012c50078ad7388"
+    },
+    {
+      "cas": "759-94-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/759-94-4.pt",
+      "formula": "C9H19NOS",
+      "canonical": "CCCN(CCC)C(=O)SCC",
+      "spectrum_hash": "81869262505dd2e681afb8521eb40e34d5a2dbed35e7572e1f9957d78b80dc52"
+    },
+    {
+      "cas": "76-15-3",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/76-15-3.pt",
+      "formula": "C2ClF5",
+      "canonical": "FC(F)(F)C(F)(F)Cl",
+      "spectrum_hash": "25db759c058e2e3c526734ad39f09b503328d00babed19d75cfa9dd145ad9b2e"
+    },
+    {
+      "cas": "760-20-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/760-20-3.pt",
+      "formula": "C6H12",
+      "canonical": "C=CC(C)CC",
+      "spectrum_hash": "1d9b0253a86f745db355692f3ecb9b584a4f4757205ce2cc5bec2ee52592f5a5"
+    },
+    {
+      "cas": "762-84-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/762-84-5.pt",
+      "formula": "C6H13NO",
+      "canonical": "CC(=O)NC(C)(C)C",
+      "spectrum_hash": "20df31ba2c9f880d0a2f08d68c18f201545d3c707ae62c8d76a973768bfa2d28"
+    },
+    {
+      "cas": "764-35-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/764-35-2.pt",
+      "formula": "C6H10",
+      "canonical": "CC#CCCC",
+      "spectrum_hash": "0f76a4ef65df82d4970225cd318ed2a972ca19356bc3620b9c89434782520e34"
+    },
+    {
+      "cas": "7642-09-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7642-09-3.pt",
+      "formula": "C6H12",
+      "canonical": "CCC=CCC",
+      "spectrum_hash": "47aca4b547c5463e1b5d5cc75f803d1789812fd46b6e3a3accfa0d9b6353955f"
+    },
+    {
+      "cas": "765-03-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/765-03-7.pt",
+      "formula": "C12H22",
+      "canonical": "C#CCCCCCCCCCC",
+      "spectrum_hash": "ee19ca8ce4b5cf6eb35aa72f8e3dc1b029997c1ff86d8833bd9aa7d1397762d5"
+    },
+    {
+      "cas": "766-05-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/766-05-2.pt",
+      "formula": "C7H11N",
+      "canonical": "N#CC1CCCCC1",
+      "spectrum_hash": "f2f449eec59b4bdb2ea8632a529be0025845030a4842947da16d32c9a7f3347f"
+    },
+    {
+      "cas": "766-93-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/766-93-8.pt",
+      "formula": "C7H13NO",
+      "canonical": "O=CNC1CCCCC1",
+      "spectrum_hash": "13f1a845f3192330be6028a31fe1bf77978df04caeb64219a1104c5e221c0641"
+    },
+    {
+      "cas": "766-94-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/766-94-9.pt",
+      "formula": "C8H8O",
+      "canonical": "C=COc1ccccc1",
+      "spectrum_hash": "5ecd537b4ec7aed642dc24a3a768be837572b718dd59a1a3fb3d6694beb6823f"
+    },
+    {
+      "cas": "77-77-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/77-77-0.pt",
+      "formula": "C4H6O2S",
+      "canonical": "C=CS(=O)(=O)C=C",
+      "spectrum_hash": "a13e71a4cc35348f82cbfe0897c8944a1baa21e94cd9d573e53288c11c3944a0"
+    },
+    {
+      "cas": "77-78-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/77-78-1.pt",
+      "formula": "C2H6O4S",
+      "canonical": "COS(=O)(=O)OC",
+      "spectrum_hash": "b47a51d179825a6c1a1eb564c11f8aac2185cabbbd80db67878e636256432886"
+    },
+    {
+      "cas": "77-85-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/77-85-0.pt",
+      "formula": "C5H12O3",
+      "canonical": "CC(CO)(CO)CO",
+      "spectrum_hash": "77ce35ad1f46fcdbed06d5b122a999d507c841478053a401d38bf68208dccb8d"
+    },
+    {
+      "cas": "7732-18-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/7732-18-5.pt",
+      "formula": "H2O",
+      "canonical": "O",
+      "spectrum_hash": "756bcc730bf9ada1a397c9b1ffbee639cbac9358a1b8974a2b7c75a1c67b0197"
+    },
+    {
+      "cas": "7735-56-0",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/7735-56-0.pt",
+      "formula": "C7H4O3S",
+      "canonical": "O=c1oc2ccc(O)cc2s1",
+      "spectrum_hash": "6c74e8fac1e48731fd6a6b9fe27df290750c0d2ffab5ca25e4ca9137f62f9666"
+    },
+    {
+      "cas": "78-40-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/78-40-0.pt",
+      "formula": "C6H15O4P",
+      "canonical": "CCOP(=O)(OCC)OCC",
+      "spectrum_hash": "aebcdd1dca0604b9c79f44ed53c96bb0f416fab7fad15f4c2fc250ada1326e54"
+    },
+    {
+      "cas": "78-67-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/78-67-1.pt",
+      "formula": "C8H12N4",
+      "canonical": "CC(C)(C#N)N=NC(C)(C)C#N",
+      "spectrum_hash": "3b9ff6609cc1036b4d03d2e1c26eb4dfa50cbc9b36e8ee39f1670b8dd18f4f41"
+    },
+    {
+      "cas": "78-75-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/78-75-1.pt",
+      "formula": "C3H6Br2",
+      "canonical": "CC(Br)CBr",
+      "spectrum_hash": "05ba4898b4c2e060caa185b266ef0f443589f32513352c66ba028628cd5a4ffb"
+    },
+    {
+      "cas": "79-16-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/79-16-3.pt",
+      "formula": "C3H7NO",
+      "canonical": "CNC(C)=O",
+      "spectrum_hash": "19b23d1007be60bc13fa46c56aa3d5403f9e6f7cab73a413a4f0f2c4e1f933d9"
+    },
+    {
+      "cas": "79-29-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/79-29-8.pt",
+      "formula": "C6H14",
+      "canonical": "CC(C)C(C)C",
+      "spectrum_hash": "244c724bb6c98662cd46518cb47403b589b93149ad36e6f60a0b9b02a5fc8b29"
+    },
+    {
+      "cas": "79-30-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/79-30-1.pt",
+      "formula": "C4H7ClO",
+      "canonical": "CC(C)C(=O)Cl",
+      "spectrum_hash": "b288cc3a2af00bd2a13a2cf08e904efc3d4ae17bd08eab0c7bf36bac88042b21"
+    },
+    {
+      "cas": "816-79-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/816-79-5.pt",
+      "formula": "C7H14",
+      "canonical": "CC=C(CC)CC",
+      "spectrum_hash": "0cfdff073e6ddd3608ebe3916ab0cf7d041e9e71973ed240f8e445be7c936b1d"
+    },
+    {
+      "cas": "823-76-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/823-76-7.pt",
+      "formula": "C8H14O",
+      "canonical": "CC(=O)C1CCCCC1",
+      "spectrum_hash": "33144dcbe1fa868f93e30624cd312f60185a2c1f43da2726f5ffd71994c9bf16"
+    },
+    {
+      "cas": "827-15-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/827-15-6.pt",
+      "formula": "C6F5I",
+      "canonical": "Fc1c(F)c(F)c(I)c(F)c1F",
+      "spectrum_hash": "8a4ccd8594c1f1a6122437ff6384019af4e4cc15ca2b28fb33d86a2c36c69ba5"
+    },
+    {
+      "cas": "83-72-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/83-72-7.pt",
+      "formula": "C10H6O3",
+      "canonical": "O=C1C=C(O)C(=O)c2ccccc21",
+      "spectrum_hash": "abefa774cc6ac17d33a480cd444b4764fcb0f6cdc4f3f4b81176be5c992d7d4e"
+    },
+    {
+      "cas": "87-40-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-40-1.pt",
+      "formula": "C7H5Cl3O",
+      "canonical": "COc1c(Cl)cc(Cl)cc1Cl",
+      "spectrum_hash": "4f4b66b53ea473a9490bf056041699c624c32b95046e57ef87ded414138ab406"
+    },
+    {
+      "cas": "87-42-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-42-3.pt",
+      "formula": "C5H3ClN4",
+      "canonical": "Clc1ncnc2[nH]cnc12",
+      "spectrum_hash": "a9b961c4a7b3027421e35d22ed151619f48112a20bf33eb4229208528d9e387c"
+    },
+    {
+      "cas": "87-51-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-51-4.pt",
+      "formula": "C10H9NO2",
+      "canonical": "O=C(O)Cc1c[nH]c2ccccc12",
+      "spectrum_hash": "091b0fc0693ad8df22f6d8931512d9d60ed56661221febfc927816e7a6713e7a"
+    },
+    {
+      "cas": "87-56-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-56-9.pt",
+      "formula": "C4H2Cl2O3",
+      "canonical": "O=CC(Cl)=C(Cl)C(=O)O",
+      "spectrum_hash": "bdefba0bec3d088911e4bbcbe45690f77f3c9d3c197dd742b154ce9898024065"
+    },
+    {
+      "cas": "87-60-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-60-5.pt",
+      "formula": "C7H8ClN",
+      "canonical": "Cc1c(N)cccc1Cl",
+      "spectrum_hash": "76a7628d4496c74cc5bcda61d1463c089212124158329bc96512adb2cf69fb7d"
+    },
+    {
+      "cas": "87-66-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-66-1.pt",
+      "formula": "C6H6O3",
+      "canonical": "Oc1cccc(O)c1O",
+      "spectrum_hash": "6a18876beea78ba5f59692d7801d697b8186226abcd01ce0f142d6eab4ca0eaa"
+    },
+    {
+      "cas": "87-86-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/87-86-5.pt",
+      "formula": "C6HCl5O",
+      "canonical": "Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl",
+      "spectrum_hash": "a626e37a01294a8d6a6490aeba0065792c031ce512d4efb3b36815bf11496f2a"
+    },
+    {
+      "cas": "871-83-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/871-83-0.pt",
+      "formula": "C10H22",
+      "canonical": "CCCCCCCC(C)C",
+      "spectrum_hash": "435525cf1bb435606221763efd7b883a492a3029960967a81de7e18ba414a25a"
+    },
+    {
+      "cas": "872-56-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/872-56-0.pt",
+      "formula": "C7H14",
+      "canonical": "CC(C)C1CCC1",
+      "spectrum_hash": "550033f3d522b755ca5fef0a1ad212fc8d977a32abddbbd9c9e6705d145f9aa6"
+    },
+    {
+      "cas": "872-85-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/872-85-5.pt",
+      "formula": "C6H5NO",
+      "canonical": "O=Cc1ccncc1",
+      "spectrum_hash": "572b716aaaa8fbe3dd645c13ee2a8390007b1acc0b3e5cbe6bec669fd689812a"
+    },
+    {
+      "cas": "874-23-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/874-23-7.pt",
+      "formula": "C8H12O2",
+      "canonical": "CC(=O)C1CCCCC1=O",
+      "spectrum_hash": "e209fea4dba533371c298a3d8990183240e7c356f707e3a4e21ef1a0c18a7688"
+    },
+    {
+      "cas": "874-41-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/874-41-9.pt",
+      "formula": "C10H14",
+      "canonical": "CCc1ccc(C)cc1C",
+      "spectrum_hash": "ce08f80f47c814a3058511b8974e447b7a47d9d80e652b54622d4e73be502e59"
+    },
+    {
+      "cas": "88-19-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/88-19-7.pt",
+      "formula": "C7H9NO2S",
+      "canonical": "Cc1ccccc1S(N)(=O)=O",
+      "spectrum_hash": "4e8448ebe8fe8c3145edb6802907dc81d2a13f51e39130a75958413f7e112a17"
+    },
+    {
+      "cas": "88-74-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/88-74-4.pt",
+      "formula": "C6H6N2O2",
+      "canonical": "Nc1ccccc1[N+](=O)[O-]",
+      "spectrum_hash": "591396436e4e8df8ced8901a65dac08ce75051492065e1e017b4ba6287c74b37"
+    },
+    {
+      "cas": "88-75-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/88-75-5.pt",
+      "formula": "C6H5NO3",
+      "canonical": "O=[N+]([O-])c1ccccc1O",
+      "spectrum_hash": "f39019e1cc72db62ec3804b8276930783c3d6283fcd1ca5f8bf5925afdeb25bd"
+    },
+    {
+      "cas": "89-96-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/89-96-3.pt",
+      "formula": "C8H9Cl",
+      "canonical": "CCc1ccccc1Cl",
+      "spectrum_hash": "79f1f4024168709b12500a258bede9be4e49200b00024ecfa8793d228e9b2407"
+    },
+    {
+      "cas": "90-14-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/90-14-2.pt",
+      "formula": "C10H7I",
+      "canonical": "Ic1cccc2ccccc12",
+      "spectrum_hash": "905db3ae2d0b2f8e1ec6b38e143a044ac1d010c78c34fb2d1c13c645ae46594c"
+    },
+    {
+      "cas": "90-60-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/90-60-8.pt",
+      "formula": "C7H4Cl2O2",
+      "canonical": "O=Cc1cc(Cl)cc(Cl)c1O",
+      "spectrum_hash": "c9fb9e0a86fa6a0ac47dec6c902ee7e950e1ed12645210834303d0fe8296d672"
+    },
+    {
+      "cas": "91-19-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/91-19-0.pt",
+      "formula": "C8H6N2",
+      "canonical": "c1ccc2nccnc2c1",
+      "spectrum_hash": "1c90d2c24715a202aacc1a544d85c7b3056cde1f79118f4aa6255edd7612746c"
+    },
+    {
+      "cas": "91-57-6",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/91-57-6.pt",
+      "formula": "C11H10",
+      "canonical": "Cc1ccc2ccccc2c1",
+      "spectrum_hash": "12600199007382e9c9dcddd171de7e0dd6d3f7b3b43f83d63b38941acccc6aa1"
+    },
+    {
+      "cas": "91-60-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/91-60-1.pt",
+      "formula": "C10H8S",
+      "canonical": "Sc1ccc2ccccc2c1",
+      "spectrum_hash": "a14f108d63d768a8471b06fc944f8d7b2f2f0d4b13d94bdd71ce4f8db8ba515f"
+    },
+    {
+      "cas": "917-92-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/917-92-0.pt",
+      "formula": "C6H10",
+      "canonical": "C#CC(C)(C)C",
+      "spectrum_hash": "c04ca42fcd3f539d657be04c70dea8343776bc3127abea7d8c625e2e4f2c69e6"
+    },
+    {
+      "cas": "92-46-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/92-46-6.pt",
+      "formula": "C10H8ClN",
+      "canonical": "Cc1ccc2cc(Cl)ccc2n1",
+      "spectrum_hash": "dd2e92d81bb4da8531cd7f91478b34469bd0d900dab95c1a1c02c69d10ef37f6"
+    },
+    {
+      "cas": "92-52-4",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/92-52-4.pt",
+      "formula": "C12H10",
+      "canonical": "c1ccc(-c2ccccc2)cc1",
+      "spectrum_hash": "0e501ed8ac22bac026efbaf9f82959393873b7b9661715e1fd4e43693678bf71"
+    },
+    {
+      "cas": "921-47-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/921-47-1.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)C(C)C(C)C",
+      "spectrum_hash": "c7836abc6a579dc37be9beee9f1f0876ca6153acbc4eeda29c5cef3eb1f2a9f6"
+    },
+    {
+      "cas": "923-28-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/923-28-4.pt",
+      "formula": "C9H18O",
+      "canonical": "CCCCCC(=O)C(C)C",
+      "spectrum_hash": "b085d1fa59f21432bf390df049d9d3b283ca1cdda2e552ee382288bc78eab899"
+    },
+    {
+      "cas": "926-82-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/926-82-9.pt",
+      "formula": "C9H20",
+      "canonical": "CCC(C)CC(C)CC",
+      "spectrum_hash": "7330f82b6de3b7a71c567deb4f3648f6db4cfb77e521618eb840f18b4b3cc4cd"
+    },
+    {
+      "cas": "927-49-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/927-49-1.pt",
+      "formula": "C11H22O",
+      "canonical": "CCCCCC(=O)CCCCC",
+      "spectrum_hash": "447ec1131e41f9ed41184cebda1c8dbddcbf97f7860e49d1f723c34ba3b3ccfd"
+    },
+    {
+      "cas": "928-49-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/928-49-4.pt",
+      "formula": "C6H10",
+      "canonical": "CCC#CCC",
+      "spectrum_hash": "4d83eec8b7964c4a225e89830073915095a8bc0707e1f42b0de146a76018bab2"
+    },
+    {
+      "cas": "928-68-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/928-68-7.pt",
+      "formula": "C8H16O",
+      "canonical": "CC(=O)CCCC(C)C",
+      "spectrum_hash": "fc8d558218fddf1e8f8c36d1f60f6b0867e19f9b243a367094bc9873f5b8514e"
+    },
+    {
+      "cas": "928-96-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/928-96-1.pt",
+      "formula": "C6H12O",
+      "canonical": "CCC=CCCO",
+      "spectrum_hash": "da4ebe0c60af68311e03f3d11e5ba125cce9be8dbc33aa038bb4a8524b79dd02"
+    },
+    {
+      "cas": "93-61-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/93-61-8.pt",
+      "formula": "C8H9NO",
+      "canonical": "CN(C=O)c1ccccc1",
+      "spectrum_hash": "e4b81ba5bea118d805a86ef2bb00cf86d4889274aaab97763f7cdd7302325d7d"
+    },
+    {
+      "cas": "930-89-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/930-89-2.pt",
+      "formula": "C8H16",
+      "canonical": "CCC1CCCC1C",
+      "spectrum_hash": "cb8a6560d911a25d324bd258b36d7493e25f4b463e47e6bd0d85e9e17184487f"
+    },
+    {
+      "cas": "933-11-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/933-11-9.pt",
+      "formula": "C9H16",
+      "canonical": "CC1=CCCCCCC1",
+      "spectrum_hash": "e829f69fe93d29485d25f647cb66e4cb91cd97dd62e6d0728e83faa64547d05e"
+    },
+    {
+      "cas": "933-75-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/933-75-5.pt",
+      "formula": "C6H3Cl3O",
+      "canonical": "Oc1c(Cl)ccc(Cl)c1Cl",
+      "spectrum_hash": "8e9e5b2f6df4b9a55a29bc4b8ec1117637c7b8d274f5bdcbf852c499d7afba61"
+    },
+    {
+      "cas": "933-98-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/933-98-2.pt",
+      "formula": "C10H14",
+      "canonical": "CCc1cccc(C)c1C",
+      "spectrum_hash": "406f66d22f63d861ac975c9fb34237c249183fc9a33e155611ec6d3cd6291e1b"
+    },
+    {
+      "cas": "934-80-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/934-80-5.pt",
+      "formula": "C10H14",
+      "canonical": "CCc1ccc(C)c(C)c1",
+      "spectrum_hash": "aea0e04a905c12347416ba2d7e8007509d28a0345d1f4f8ea5570d2524d89779"
+    },
+    {
+      "cas": "935-56-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/935-56-8.pt",
+      "formula": "C10H15Cl",
+      "canonical": "ClC12CC3CC(CC(C3)C1)C2",
+      "spectrum_hash": "3ffa026767c710855761e055d5bb25eddc377461afc1391c468977c083fba438"
+    },
+    {
+      "cas": "94-09-7",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/94-09-7.pt",
+      "formula": "C9H11NO2",
+      "canonical": "CCOC(=O)c1ccc(N)cc1",
+      "spectrum_hash": "502169d2e66d8e599105c2da8b182496f8d1b12af6b7ca328f1becca2e2b887b"
+    },
+    {
+      "cas": "94-58-6",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/94-58-6.pt",
+      "formula": "C10H12O2",
+      "canonical": "CCCc1ccc2c(c1)OCO2",
+      "spectrum_hash": "2bd94238568c421e5fced9af30400a125156de77ae7ab60cf05a2fa8451d562b"
+    },
+    {
+      "cas": "94-64-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/94-64-4.pt",
+      "formula": "C8H10ClN",
+      "canonical": "CNCc1ccccc1Cl",
+      "spectrum_hash": "d20f6403b63828edd482be3152b95d897e83b6e86e156959c8189d0deb3c8a5c"
+    },
+    {
+      "cas": "95-12-5",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/95-12-5.pt",
+      "formula": "C8H12O",
+      "canonical": "OCC1CC2C=CC1C2",
+      "spectrum_hash": "92107fb2d452e74d21f8736c145fcd0b4ff0ad1fe1cc43b9ef5540bfbfb6900c"
+    },
+    {
+      "cas": "95-45-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/95-45-4.pt",
+      "formula": "C4H8N2O2",
+      "canonical": "CC(=NO)C(C)=NO",
+      "spectrum_hash": "2dfa4dce706f1003d2c35f814d0f2daeaa0a318b499602875948d3e4599dfac2"
+    },
+    {
+      "cas": "95-59-0",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/95-59-0.pt",
+      "formula": "C4H6Cl2O2",
+      "canonical": "ClC1OCCOC1Cl",
+      "spectrum_hash": "e83d9750f44a9dd869d009de72317b70f36d0c592b2e3a8a21e20f45a796e419"
+    },
+    {
+      "cas": "95-95-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/95-95-4.pt",
+      "formula": "C6H3Cl3O",
+      "canonical": "Oc1cc(Cl)c(Cl)cc1Cl",
+      "spectrum_hash": "fc028aef2195ce00ca6d4277df9fb89a7dbdbd98c61c1c265f34063cf05eee8c"
+    },
+    {
+      "cas": "96-22-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/96-22-0.pt",
+      "formula": "C5H10O",
+      "canonical": "CCC(=O)CC",
+      "spectrum_hash": "8ba1a12f8f690c0bfa1630e4d9cfe5764e1b1697c0fd586a3a159251e52a13e5"
+    },
+    {
+      "cas": "96-41-3",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/96-41-3.pt",
+      "formula": "C5H10O",
+      "canonical": "OC1CCCC1",
+      "spectrum_hash": "36d453b5dabf4d08b0212ae1b2bc0b1abf74cff63f74da3cf9a7adb2197fda68"
+    },
+    {
+      "cas": "96-43-5",
+      "source_dataset": "targeted649",
+      "source_path": "../../data/exclusions/targeted_selected/96-43-5.pt",
+      "formula": "C4H3ClS",
+      "canonical": "Clc1cccs1",
+      "spectrum_hash": "ae881263ca09acecb00421aa195255f3e0a83f993d1b29274844f60b13a8c291"
+    },
+    {
+      "cas": "96-96-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/96-96-8.pt",
+      "formula": "C7H8N2O3",
+      "canonical": "COc1ccc(N)c([N+](=O)[O-])c1",
+      "spectrum_hash": "aa63d8996520623b2568bd43252622a85bc475205f207589b73addbc630fe60f"
+    },
+    {
+      "cas": "97-62-1",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/97-62-1.pt",
+      "formula": "C6H12O2",
+      "canonical": "CCOC(=O)C(C)C",
+      "spectrum_hash": "9f327eddf8d7329bce01aeab940f0699750a502b72327ac00417dc84438d2e73"
+    },
+    {
+      "cas": "98-88-4",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/98-88-4.pt",
+      "formula": "C7H5ClO",
+      "canonical": "O=C(Cl)c1ccccc1",
+      "spectrum_hash": "e75892b52b5c590e674d72c3529f79aeb6f730547e68c61fd7af9b7483a92e2b"
+    },
+    {
+      "cas": "99-09-2",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/99-09-2.pt",
+      "formula": "C6H6N2O2",
+      "canonical": "Nc1cccc([N+](=O)[O-])c1",
+      "spectrum_hash": "51ac9bc2901837fcb90767ddb1a76401c53fbb7d1487df7fbe02027c16d80056"
+    },
+    {
+      "cas": "99-30-9",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/99-30-9.pt",
+      "formula": "C6H4Cl2N2O2",
+      "canonical": "Nc1c(Cl)cc([N+](=O)[O-])cc1Cl",
+      "spectrum_hash": "5fcd1032b15d58fb15593c220068559fc7272a807c42a96c3202c4617c188030"
+    },
+    {
+      "cas": "99-63-8",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/99-63-8.pt",
+      "formula": "C8H4Cl2O2",
+      "canonical": "O=C(Cl)c1cccc(C(=O)Cl)c1",
+      "spectrum_hash": "109f2a351f120e5897113a3d70827e44454864ae8b46cf05faf05a9edc3e4570"
+    },
+    {
+      "cas": "99-65-0",
+      "source_dataset": "nist760",
+      "source_path": "../../data/exclusions/nist760/99-65-0.pt",
+      "formula": "C6H4N2O4",
+      "canonical": "O=[N+]([O-])c1cccc([N+](=O)[O-])c1",
+      "spectrum_hash": "4145ae35975f98064c641a82e063087968d3fa158932ec6ab31444e884ab438f"
+    }
+  ]
+}
